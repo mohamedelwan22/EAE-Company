@@ -1,30 +1,13 @@
 import { Link } from 'react-router-dom';
 import { useLang } from '@/contexts/LanguageContext';
 import { MapPin, Calendar } from 'lucide-react';
-
-const projects = [
-  {
-    image: 'https://placehold.co/600x400/1a2744/ffffff?text=Project+1',
-    city: { ar: 'الرياض', en: 'Riyadh' },
-    category: { ar: 'كابينة رش', en: 'Spray Booth' },
-    year: '2023',
-  },
-  {
-    image: 'https://placehold.co/600x400/1a2744/ffffff?text=Project+2',
-    city: { ar: 'جدة', en: 'Jeddah' },
-    category: { ar: 'رافعة سيارات', en: 'Car Lift' },
-    year: '2023',
-  },
-  {
-    image: 'https://placehold.co/600x400/1a2744/ffffff?text=Project+3',
-    city: { ar: 'الدمام', en: 'Dammam' },
-    category: { ar: 'ضاغط هواء', en: 'Compressor' },
-    year: '2022',
-  },
-];
+import { projects, projectCategories } from '@/data/projects';
 
 const FeaturedProjects = () => {
   const { t } = useLang();
+
+  // Show the first 3 projects from the shared data source
+  const featured = projects.slice(0, 3);
 
   return (
     <section className="py-[var(--section-py)] bg-gray-50 dark:bg-slate-900 border-t border-border">
@@ -42,23 +25,27 @@ const FeaturedProjects = () => {
 
         {/* Projects Grid */}
         <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8 mb-12">
-          {projects.map((project, i) => (
+          {featured.map((project) => {
+            const catObj = projectCategories.find((c) => c.id === project.category);
+            const categoryLabel = catObj ? t(catObj.ar, catObj.en) : '';
+
+            return (
             <div 
-              key={i} 
+              key={project.id} 
               className="group relative rounded-2xl overflow-hidden shadow-[var(--shadow-md)] hover:shadow-[var(--shadow-xl)] hover:-translate-y-2 border-2 border-transparent hover:border-primary transition-all duration-500 bg-card cursor-pointer"
             >
               {/* Image Container */}
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img 
-                  src={project.image} 
-                  alt={t(project.city.ar, project.city.en)} 
+                  src={project.images[0]} 
+                  alt={t(project.titleAr, project.titleEn)} 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                   loading="lazy"
                 />
                 
                 {/* Category Badge - Top Right */}
                 <div className="absolute top-4 ltr:right-4 rtl:left-4 bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-sm font-bold shadow-lg z-20">
-                  {t(project.category.ar, project.category.en)}
+                  {categoryLabel}
                 </div>
 
                 {/* Dark Gradient Overlay */}
@@ -68,7 +55,7 @@ const FeaturedProjects = () => {
                 <div className="absolute bottom-4 ltr:left-4 rtl:right-4 z-20 flex flex-col gap-2">
                   <div className="flex items-center gap-2 text-white font-bold text-lg">
                     <MapPin size={18} className="text-primary" />
-                    <span>{t(project.city.ar, project.city.en)}</span>
+                    <span>{t(project.locationAr, project.locationEn)}</span>
                   </div>
                   <div className="flex items-center gap-2 text-white/80 font-medium text-sm">
                     <Calendar size={16} className="text-primary" />
@@ -77,7 +64,8 @@ const FeaturedProjects = () => {
                 </div>
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* CTA Button */}

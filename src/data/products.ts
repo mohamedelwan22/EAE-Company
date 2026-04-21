@@ -91,6 +91,10 @@ import lamp6 from '@/assets/6lamp.jpg'
 import cleaner from '@/assets/cleaner.jpeg'
 import zd6 from '@/assets/3D-ZD-6.jpg'
 import zd9pro from '@/assets/3D-ZD-109PRO.jpg'
+import compShared1 from '@/assets/main-compress.png'
+import compShared2 from '@/assets/main-compress (2).png'
+import comp15Extra1 from '@/assets/main-comp15.png'
+import comp15Extra2 from '@/assets/main-comp15 (2).png'
 
 
 
@@ -133,9 +137,9 @@ export const products: Product[] = [
   {
     id: 'spray-booth-economic',
     category: 'spray-booth',
-    categoryLabel: t('أفران الدهان ', 'Spray Booths'),
-    name: t('فرن الدهان الاقتصادي', 'Economic Spray Booth'),
-    model: 'EAE-8015',
+    categoryLabel: t('أفران الدهان  ', 'Spray Booths '),
+    name: t('فرن الدهان EAE 8015', 'EAE 8015 Spray Booth'),
+    model: 'EAE-8015  E-Type',
     description: t(
       'تعد كابينة دهان سيارات EAE-8015 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا.',
       'The EAE-8015 spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems.'
@@ -158,9 +162,9 @@ export const products: Product[] = [
       t('نظام فلترة ثلاثي المراحل: فلتر مبدئي + سقف + أرضية', 'Triple-stage filtration: primary filter + ceiling filter + floor filter'),
       t('لوحة تحكم متكاملة مع مفتاح طوارئ', 'Integrated control panel with emergency stop')
     ],
-    badge: t('الأكثر مبيعاً', 'Best Seller'),
+    badge: t('الأفضل قيمة ', 'Best Value'),
     whatsappText: t(
-      'مرحباً، أود الاستفسار عن كابينة الرش الاقتصادية EAE-8015',
+      'مرحباً، أود الاستفسار عن فرن الرش EAE 8015',
       "Hello, I'd like to inquire about Economic Spray Booth EAE-8015"
     ),
   },
@@ -168,8 +172,8 @@ export const products: Product[] = [
     id: 'luxury-bzb-spray-booth',
     category: 'spray-booth',
     categoryLabel: t('أفران الدهان', 'Spray Booths'),
-    name: t('فرن الدهان الفاخر BZB', 'Luxury BZB Spray Booth'),
-    model: 'EAE-8000 (JZJ-8000AU)',
+    name: t('فرن الدهان EAE 8000', ' Spray Booth EAE 8000 '),
+    model: 'EAE-8000 (JZJ-8000AU) L-Type',
     description: t(
       'تعد كابينة دهان سيارات EAE-8000 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. فهي تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا، تضمن خروج السيارة بعد الدهان بأعلى جودة وفق أقصى معايير السلامة المهنية.',
       'The EAE-8000 car spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems to provide a completely clean working environment, ensuring the vehicle exits with the highest quality finish according to the strictest professional safety standards.'
@@ -207,10 +211,10 @@ export const products: Product[] = [
       t('زجاج أمان 4 مم ونوافذ مربعة للمراقبة', '4mm safety glass with square observation windows'),
       t('سقف من الصلب المجلفن مع سعة هواء 35,000 م³/ساعة', 'Galvanized steel ceiling with 35,000 m³/h air capacity'),
     ],
-    badge: t('الأكثر تطوراً', 'Most Advanced'),
+    badge: t('الأكثر مبيعاً', 'Most Seller '),
     whatsappText: t(
-      'مرحباً، أود الاستفسار عن كابينة الدهان الفاخرة BZB EAE-8000 (JZJ-8000AU)',
-      "Hello, I'd like to inquire about the Luxury BZB Spray Booth EAE-8000 (JZJ-8000AU)"
+      'مرحباً، أود الاستفسار عن كابينة الدهان  EAE-8000 (JZJ-8000AU)',
+      "Hello, I'd like to inquire about the  Spray Booth EAE-8000 (JZJ-8000AU)"
     ),
   },
   {
@@ -1151,19 +1155,7 @@ export const products: Product[] = [
       'EVO oil-injected screw air compressor with German Rotorcomp air end. High efficiency, low noise, 12-month warranty.'
     ),
     image: comp15,
-    images: [
-      comp15,
-      comp15_2,
-      comp15_3,
-      comp15_4,
-      comp15_5,
-      comp15_6,
-      comp15_7,
-      comp15_8,
-      comp15_9,
-      comp15_10,
-      ...compressorSharedImages,
-    ],
+    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, comp15, comp15_2, comp15_3, comp15_4, comp15_5, comp15_6, comp15_7, comp15_8, comp15_9, comp15_10, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '15' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -1213,12 +1205,7 @@ export const products: Product[] = [
       'EVO oil-injected screw air compressor with German Rotorcomp air end, 22 kW — ideal for medium and large workshops.'
     ),
     image: comp22,
-    images: [
-      comp22,
-      comp22_2,
-      comp22_3,
-      ...compressorSharedImages,
-    ],
+    images: [compShared1, compShared2, comp22, comp22_2, comp22_3, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '22' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -1268,7 +1255,7 @@ export const products: Product[] = [
       'EVO oil-injected screw air compressor, 30 kW with 4.32 m³/min air capacity — ideal for mid-size industrial facilities.'
     ),
     image: comp,
-    images: [...compressorSharedImages],
+    images: [compShared1, compShared2, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '30' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -1317,10 +1304,7 @@ export const products: Product[] = [
       'The most powerful EVO oil-injected screw compressor in the series — 37 kW, 5.8 m³/min — built for large industrial facilities.'
     ),
     image: comp37,
-    images: [
-      comp37,
-      ...compressorSharedImages,
-    ],
+    images: [compShared1, compShared2, comp37, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '37' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },

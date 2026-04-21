@@ -349,11 +349,11 @@ const ProductDetail = () => {
                     to={`/product/${p.id}`}
                     className="bg-card rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-sm)] hover:-translate-y-2.5 hover:shadow-[var(--shadow-xl)] hover:border-primary transition-all duration-500 group block"
                   >
-                    <div className="h-[200px] overflow-hidden bg-secondary">
+                    <div className="h-[200px] overflow-hidden bg-[#f8f8f8] dark:bg-white/10 flex items-center justify-center p-4">
                       <img
                         src={p.image}
                         alt={t(p.name.ar, p.name.en)}
-                        className="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-600"
+                        className="max-w-full max-h-full object-contain group-hover:scale-[1.08] transition-transform duration-600"
                         loading="lazy"
                       />
                     </div>

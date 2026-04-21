@@ -134,11 +134,11 @@ const ProductGroup = ({ groupId: propGroupId }: { groupId?: string }) => {
                   className="group bg-card rounded-3xl overflow-hidden border-2 border-border hover:border-primary shadow-[var(--shadow-sm)] hover:shadow-[var(--shadow-xl)] transition-all duration-500 hover:-translate-y-2 block"
                 >
                   {/* Image */}
-                  <div className="relative h-[280px] md:h-[320px] overflow-hidden bg-secondary">
+                  <div className="relative h-[280px] md:h-[320px] overflow-hidden bg-[#f8f8f8] dark:bg-white/10 flex items-center justify-center p-6">
                     <img
                       src={product.image}
                       alt={t(product.name.ar, product.name.en)}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700"
                     />
                     {/* Badge overlay */}
                     <div className="absolute top-4 start-4 bg-[#1a2744]/90 backdrop-blur-sm text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm font-bold">

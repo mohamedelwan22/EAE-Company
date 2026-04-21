@@ -41,11 +41,11 @@ const ProductsSection = () => {
               className="bg-card rounded-2xl overflow-hidden border border-border shadow-[var(--shadow-sm)] hover:-translate-y-2.5 hover:shadow-[var(--shadow-xl)] hover:border-primary transition-all duration-500 group"
             >
               <Link to={`/product/${product.id}`} className="block">
-                <div className="h-[220px] max-sm:h-[180px] overflow-hidden bg-secondary relative">
+                <div className="h-[220px] max-sm:h-[180px] overflow-hidden bg-[#f8f8f8] dark:bg-white/10 relative p-4 flex items-center justify-center">
                   <img
                     src={product.image}
                     alt={t(product.name.ar, product.name.en)}
-                    className="w-full h-full object-cover group-hover:scale-[1.08] transition-transform duration-600"
+                    className="max-h-full max-w-full h-auto w-auto object-contain group-hover:scale-[1.08] transition-transform duration-600"
                     loading="lazy"
                   />
                   {product.badge && (

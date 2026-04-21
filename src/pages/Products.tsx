@@ -81,11 +81,11 @@ const Products = () => {
                 className="bg-card rounded-2xl overflow-hidden border border-border shadow-sm hover:-translate-y-2 hover:shadow-xl hover:border-primary transition-all duration-300 group flex flex-col"
               >
                 <Link to={productLink} className="block relative">
-                  <div className="h-[240px] max-sm:h-48 overflow-hidden bg-white/5 relative p-4 flex items-center justify-center">
+                  <div className="h-[240px] max-sm:h-48 overflow-hidden bg-[#f8f8f8] dark:bg-white/10 relative p-4 flex items-center justify-center">
                     <img
                       src={product.image}
                       alt={t(product.name.ar, product.name.en)}
-                      className="max-h-full max-w-full h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="max-h-full max-w-full h-auto w-auto object-contain group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
                     {displayBadge && (

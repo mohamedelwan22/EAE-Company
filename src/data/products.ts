@@ -144,8 +144,8 @@ export const products: Product[] = [
       'تعد كابينة دهان سيارات EAE-8000 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. فهي تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا، تضمن خروج السيارة بعد الدهان بأعلى جودة وفق أقصى معايير السلامة المهنية.',
       'The EAE-8000 car spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems to provide a completely clean working environment, ensuring the vehicle exits with the highest quality finish according to the strictest professional safety standards.'
     ),
-    image: bzb,
-    images: [bzb, bzb2, bzb3, bzb4, bzb5, bzb6, bzb7, bzb8, bzb9, bzb10],
+    image: bzb2,
+    images: [bzb3, bzb4, bzb5, bzb6, bzb7, bzb8, bzb9, bzb10],
     specs: [
       { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5350 × 3400 mm' },
       { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 4000 × 2650 mm' },
@@ -194,8 +194,8 @@ export const products: Product[] = [
       'رافعة هيدروليكية احترافية بعمودين LD-240T، مزوّدة بأسطوانتين ونظام سلسلة دفع قوي يضمن رفعًا وخفضًا سلسًا ومستقرًا. مثالية لورش الصيانة التي تخدم سيارات الركاب والمركبات الخفيفة حتى وزن 4500 كجم.',
       'The LD-240T is a professional 2-post hydraulic lift equipped with dual cylinders and a powerful chain drive system ensuring smooth and stable lifting. Ideal for service workshops handling passenger cars and light vehicles up to 4500 kg.'
     ),
-    image: carClosed1,
-    images: [carClosed1, carClosed2, carClosed3, carClosed4, carClosed5, carClosed6],
+    image: carClosed6,
+    images: [ carClosed1, carClosed2, carClosed3, carClosed4, carClosed5],
     specs: [
       { label: t('طاقة الرفع', 'Lifting Capacity'), value: '4500 kg' },
       { label: t('ارتفاع الرفع', 'Lifting Height'), value: '1945 mm' },
@@ -241,7 +241,7 @@ export const products: Product[] = [
       'The LD-240TS is a professional and economical 2-post lift designed to raise vehicles up to 4000 kg. Featuring dual hydraulic cylinders and a high-power chain drive system ensuring smooth and stable lifting. Safety-focused with a dual manual safety release system, sliding design, and low-voltage control box. Certified with quality standards. Ideal for professional workshops seeking a reliable, cost-effective solution.'
     ),
     image: carOpened1,
-    images: [carOpened1, carOpened2, carOpened3, carOpened4, carOpened5],
+    images: [ carOpened2, carOpened3, carOpened4, carOpened5],
     specs: [
       { label: t('طاقة الرفع', 'Lifting Capacity'), value: '4000 kg' },
       { label: t('ارتفاع الرفع', 'Lift Height'), value: '1845 mm' },
@@ -284,7 +284,7 @@ export const products: Product[] = [
       'The LC-400 scissor lift is designed to withstand tough working conditions in professional workshops. Features a reliable hydraulic locking system with multiple safety mechanisms, supporting both surface and in-ground installation. Equipped with a cylinder stroke end detection device. CE certified according to European standards.'
     ),
     image: ssl1,
-    images: [ssl1, ssl2, ssl3, ssl4],
+    images: [ ssl2, ssl3, ssl4],
     specs: [
       { label: t('طاقة الرفع', 'Lifting Capacity'), value: '4000 kg' },
       { label: t('ارتفاع الرفع', 'Lifting Height'), value: '1885 mm' },
@@ -371,7 +371,7 @@ export const products: Product[] = [
       'The BLC-350 is a professional double scissor lift designed for wheel alignment, maintenance, and underbody inspection of light vehicles and SUVs. Supports in-ground installation and features advanced hydraulic safety systems with CE and ISO 9001 certified structure.'
     ),
     image: bsl1,
-    images: [bsl1, bsl2, bsl3, bsl4, bsl5],
+    images: [ bsl2, bsl3, bsl4, bsl5],
     specs: [
       { label: t('طاقة الرفع', 'Lifting Capacity'), value: '4000 kg' },
       { label: t('ارتفاع الرفع', 'Lifting Height'), value: '1770 mm' },
@@ -412,8 +412,8 @@ export const products: Product[] = [
       'رافعة سيارات 4 عمود LD-440 هي رافعة هيدروليكية احترافية مصممة لرفع المركبات حتى 4000 كجم بثبات واحترافية عالية. تتميز بأسطوانة هيدروليكية محمية داخل المنصة الثابتة، وكابلات رفع مجلفنة عالية المقاومة مع نظام ربيع أوتوماتيكي لضمان الأمان الكامل عند انقطاع الكابل أثناء الرفع. مثالية لورش الصيانة والمعارض التي تحتاج إلى رفع مستقر وآمن.',
       'The LD-440 4-post car lift is a professional hydraulic lift designed to raise vehicles up to 4000 kg with high stability. Features a hydraulic cylinder located in the fixed platform for perfect protection, high resistance galvanized pre-stretched lifting cables, and automatic spring loaded safety in case of cable breakage ensuring complete stability during parking. Ideal for maintenance workshops and showrooms requiring stable and safe vehicle lifting.'
     ),
-    image: car41,
-    images: [car41, car42, car43, car44, car45, car46],
+    image: car45,
+    images: [car46,car41, car42, car43, car44],
     specs: [
       { label: t('طاقة الرفع الرئيسية', 'Lifting Capacity (Main)'), value: '4000 kg' },
       { label: t('طاقة رفع الرافعة المقصية', 'Lifting Capacity (Jack)'), value: '2000 kg' },

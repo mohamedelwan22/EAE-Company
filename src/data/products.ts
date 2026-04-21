@@ -30,6 +30,68 @@ import floor3 from '@/assets/floor3.png'
 import tool1 from '@/assets/tool1.jpeg'
 import tool2 from '@/assets/tool2.jpeg'
 
+// spray-booth
+import sprayEcono from '@/assets/spray-econo.png'
+import filter1 from '@/assets/filter1.jpeg'
+import filter2 from '@/assets/filter2.jpeg'
+import bzb from '@/assets/bzb.png'
+import bzb2 from '@/assets/bzb2.png'
+import bzb3 from '@/assets/bzb3.png'
+import bzb4 from '@/assets/bzb4.jpeg'
+import bzb5 from '@/assets/bzb5.jpeg'
+import bzb6 from '@/assets/bzb6.jpeg'
+import bzb7 from '@/assets/bzb7.jpeg'
+import bzb8 from '@/assets/bzb8.jpeg'
+import bzb9 from '@/assets/bzb9.jpeg'
+import bzb10 from '@/assets/bzb10.jpeg'
+import EAEMed from '@/assets/EAE-Med.jpeg'
+
+// car-lift
+import carClosed1 from '@/assets/car-closed1.png'
+import carClosed2 from '@/assets/car-closed2.png'
+import carClosed3 from '@/assets/car-closed3.png'
+import carClosed4 from '@/assets/car-closed4.png'
+import carClosed5 from '@/assets/car-closed5.png'
+import carClosed6 from '@/assets/car-closed6.jpg'
+import carOpened1 from '@/assets/car-opened1.jpg'
+import carOpened2 from '@/assets/car-opened2.png'
+import carOpened3 from '@/assets/car-opened3.png'
+import carOpened4 from '@/assets/car-opened4.png'
+import carOpened5 from '@/assets/car-opened5.png'
+import car41 from '@/assets/car4-1.png'
+import car42 from '@/assets/car4-2.png'
+import car43 from '@/assets/car4-3.png'
+import car44 from '@/assets/car4-4.png'
+import car45 from '@/assets/car4-5.png'
+import car46 from '@/assets/car4-6.png'
+import ssl1 from '@/assets/ssl1.png'
+import ssl2 from '@/assets/SSL2.png'
+import ssl3 from '@/assets/SSL3.png'
+import ssl4 from '@/assets/SSL4.png'
+import bsl1 from '@/assets/bsl1.png'
+import bsl2 from '@/assets/BSL2.png'
+import bsl3 from '@/assets/BSL3.png'
+import bsl4 from '@/assets/BSL4.png'
+import bsl5 from '@/assets/bsl5.jpg'
+
+// misc
+import ac1 from '@/assets/AC1.jpg'
+import ac2 from '@/assets/AC2.jpg'
+import ac3 from '@/assets/AC3.jpeg'
+import repair1 from '@/assets/repair1.jpeg'
+import repair2 from '@/assets/repair2.jpeg'
+import repair3 from '@/assets/repair3.jpeg'
+import repair4 from '@/assets/repair4.jpeg'
+import lamp2a from '@/assets/2Lamp.jpg'
+import lamp2b from '@/assets/2Lamp 3.jpg'
+import lamp2c from '@/assets/2 Lamp 2.jpeg'
+import lamp2d from '@/assets/2 Lamp 4.jpg'
+import lamp2e from '@/assets/2Lamp5.jpg'
+import lamp6 from '@/assets/6lamp.jpg'
+import cleaner from '@/assets/cleaner.jpeg'
+import zd6 from '@/assets/3D-ZD-6.jpg'
+import zd9pro from '@/assets/3D-ZD-109PRO.jpg'
+
 
 
 export interface ProductSpec {
@@ -80,7 +142,8 @@ export const products: Product[] = [
       'تعد كابينة دهان سيارات EAE-8015 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا.',
       'The EAE-8015 spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems.'
     ),
-    image: '/assets/products/spray-economic.png',
+    image: sprayEcono,
+    images: [sprayEcono],
     specs: [
       { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5000 × 3300 mm' },
       { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 3900 × 2650 mm' },
@@ -113,7 +176,8 @@ export const products: Product[] = [
       'تعد كابينة دهان سيارات EAE-8000 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. فهي تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا، تضمن خروج السيارة بعد الدهان بأعلى جودة وفق أقصى معايير السلامة المهنية.',
       'The EAE-8000 car spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems to provide a completely clean working environment, ensuring the vehicle exits with the highest quality finish according to the strictest professional safety standards.'
     ),
-    image: '/assets/products/bzb.png',
+    image: bzb,
+    images: [bzb, bzb2, bzb3, bzb4, bzb5, bzb6, bzb7, bzb8, bzb9, bzb10],
     specs: [
       { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5350 × 3400 mm' },
       { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 4000 × 2650 mm' },
@@ -161,7 +225,8 @@ export const products: Product[] = [
       'تعد كابينة دهان سيارات EAE-8014 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. فهي تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا، تضمن خروج السيارة بعد الدهان بأعلى جودة وفق أقصى معايير السلامة المهنية.',
       'The EAE-8014 car spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems to provide a completely clean working environment, ensuring the vehicle exits with the highest quality finish according to the strictest professional safety standards.'
     ),
-    image: '/assets/products/EAE-Med.jpeg',
+    image: EAEMed,
+    images: [EAEMed],
     specs: [
       { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5000 × 3300 mm' },
       { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 3900 × 2650 mm' },
@@ -211,7 +276,8 @@ export const products: Product[] = [
       'تُعدّ فلاتر أفران الدهان مواد أساسية تُستخدم لالتقاط ومعالجة رذاذ الطلاء الناتج عن عملية الرش، وتتمثل وظيفتها الرئيسية في إزالة جزيئات رذاذ الطلاء من الهواء عن طريق الاعتراض الفيزيائي، وذلك لحماية البيئة والمعدات. تتكون فلاتر كابينة رش السيارات عادةً من ألياف زجاجية أحادية الشعيرة متصلة عالية المتانة، والتي يمكنها تخزين غبار رذاذ الطلاء بكفاءة. مادة الترشيح مصنوعة من القطن الأخضر والأبيض، والجانب الأخضر هو الجانب المواجه للهواء، ويتميز بمرونته وانخفاض فقدان الضغط.',
       'Spray booth filters are essential materials used to capture and treat paint spray mist generated during the spraying process. Their primary function is to remove paint spray particles from the air through physical interception, protecting both the environment and equipment. Spray booth filters are typically made of high-durability single-filament glass fibers capable of efficiently storing paint spray dust. The filter media is made of green and white cotton — the green side faces the airflow, offering flexibility and low pressure drop.'
     ),
-    image: '/assets/products/filter1.jpeg',
+    image: filter1,
+    images: [filter1, filter2],
     specs: [
       { label: t('المادة', 'Material'), value: 'Glass Fiber / ألياف زجاجية' },
       { label: t('مادة الترشيح', 'Filter Media'), value: 'Green & White Cotton / قطن أخضر وأبيض' },
@@ -241,7 +307,8 @@ export const products: Product[] = [
       'رافعة هيدروليكية احترافية بعمودين LD-240T، مزوّدة بأسطوانتين ونظام سلسلة دفع قوي يضمن رفعًا وخفضًا سلسًا ومستقرًا. مثالية لورش الصيانة التي تخدم سيارات الركاب والمركبات الخفيفة حتى وزن 4500 كجم.',
       'The LD-240T is a professional 2-post hydraulic lift equipped with dual cylinders and a powerful chain drive system ensuring smooth and stable lifting. Ideal for service workshops handling passenger cars and light vehicles up to 4500 kg.'
     ),
-    image: '/assets/products/car-closed1.png',
+    image: carClosed1,
+    images: [carClosed1, carClosed2, carClosed3, carClosed4, carClosed5, carClosed6],
     specs: [
       { label: t('طاقة الرفع', 'Lifting Capacity'), value: '4500 kg' },
       { label: t('ارتفاع الرفع', 'Lifting Height'), value: '1945 mm' },
@@ -286,7 +353,8 @@ export const products: Product[] = [
       'رافعة LD-240TS هي رافعة احترافية واقتصادية بعمودين، مصممة لرفع المركبات حتى 4000 كجم. تتميز بأسطوانتين هيدروليكيتين وسلسلة دفع عالية القوة مما يضمن رفعًا وخفضًا ناعمًا وثابتًا. تركز على الأمان من خلال نظام فك أمان يدوي مزدوج وتصميم منزلق وصندوق تحكم بجهد منخفض، وهي حاصلة على شهادات الجودة المعتمدة. مثالية للورش المهنية التي تبحث عن حل موثوق وفعّال من حيث التكلفة.',
       'The LD-240TS is a professional and economical 2-post lift designed to raise vehicles up to 4000 kg. Featuring dual hydraulic cylinders and a high-power chain drive system ensuring smooth and stable lifting. Safety-focused with a dual manual safety release system, sliding design, and low-voltage control box. Certified with quality standards. Ideal for professional workshops seeking a reliable, cost-effective solution.'
     ),
-    image: '/assets/products/car-opened1.jpg',
+    image: carOpened1,
+    images: [carOpened1, carOpened2, carOpened3, carOpened4, carOpened5],
     specs: [
       { label: t('طاقة الرفع', 'Lifting Capacity'), value: '4000 kg' },
       { label: t('ارتفاع الرفع', 'Lift Height'), value: '1845 mm' },
@@ -328,7 +396,8 @@ export const products: Product[] = [
       'رافعة LC-400 المقصية مصممة لتحمّل ظروف العمل الشاقة داخل الورش الاحترافية. تتميز بنظام قفل هيدروليكي موثوق وآليات أمان متعددة، وتدعم التركيب الأرضي أو داخل الأرض. مزوّدة بجهاز تحديد نهاية مشوار الأسطوانة مما يوفر تجربة رفع آمنة ومستقرة وسلسة. صُمّمت وفقًا للمعايير الأوروبية وحاصلة على شهادة CE.',
       'The LC-400 scissor lift is designed to withstand tough working conditions in professional workshops. Features a reliable hydraulic locking system with multiple safety mechanisms, supporting both surface and in-ground installation. Equipped with a cylinder stroke end detection device. CE certified according to European standards.'
     ),
-    image: '/assets/products/ssl1.png',
+    image: ssl1,
+    images: [ssl1, ssl2, ssl3, ssl4],
     specs: [
       { label: t('طاقة الرفع', 'Lifting Capacity'), value: '4000 kg' },
       { label: t('ارتفاع الرفع', 'Lifting Height'), value: '1885 mm' },
@@ -379,7 +448,8 @@ export const products: Product[] = [
       'رافعة BLC-350 هي رافعة مقصية مزدوجة احترافية مخصصة لأعمال ضبط زوايا العجلات، الصيانة، وفحص أسفل السيارة للمركبات الخفيفة وسيارات الدفع الرباعي. تدعم التركيب داخل الأرض، وتتميز بأنظمة أمان هيدروليكية متطورة، وهيكل معتمد بمعايير CE و ISO 9001.',
       'The BLC-350 is a professional double scissor lift designed for wheel alignment, maintenance, and underbody inspection of light vehicles and SUVs. Supports in-ground installation and features advanced hydraulic safety systems with CE and ISO 9001 certified structure.'
     ),
-    image: '/assets/products/bsl1.png',
+    image: bsl1,
+    images: [bsl1, bsl2, bsl3, bsl4, bsl5],
     specs: [
       { label: t('طاقة الرفع', 'Lifting Capacity'), value: '4000 kg' },
       { label: t('ارتفاع الرفع', 'Lifting Height'), value: '1770 mm' },
@@ -419,7 +489,8 @@ export const products: Product[] = [
       'رافعة سيارات 4 عمود LD-440 هي رافعة هيدروليكية احترافية مصممة لرفع المركبات حتى 4000 كجم بثبات واحترافية عالية. تتميز بأسطوانة هيدروليكية محمية داخل المنصة الثابتة، وكابلات رفع مجلفنة عالية المقاومة مع نظام ربيع أوتوماتيكي لضمان الأمان الكامل عند انقطاع الكابل أثناء الرفع. مثالية لورش الصيانة والمعارض التي تحتاج إلى رفع مستقر وآمن.',
       'The LD-440 4-post car lift is a professional hydraulic lift designed to raise vehicles up to 4000 kg with high stability. Features a hydraulic cylinder located in the fixed platform for perfect protection, high resistance galvanized pre-stretched lifting cables, and automatic spring loaded safety in case of cable breakage ensuring complete stability during parking. Ideal for maintenance workshops and showrooms requiring stable and safe vehicle lifting.'
     ),
-    image: '/assets/products/car4-1.png',
+    image: car41,
+    images: [car41, car42, car43, car44, car45, car46],
     specs: [
       { label: t('طاقة الرفع الرئيسية', 'Lifting Capacity (Main)'), value: '4000 kg' },
       { label: t('طاقة رفع الرافعة المقصية', 'Lifting Capacity (Jack)'), value: '2000 kg' },
@@ -566,7 +637,8 @@ export const products: Product[] = [
       'تُعد ماكينة HO-S600 حلاً متكاملاً واحترافيًا لخدمات صيانة أنظمة تكييف السيارات، حيث توفر جميع الوظائف الأساسية في جهاز واحد بكفاءة عالية وفقة متناهية.',
       'The HO-S600 is a fully integrated professional solution for automotive AC maintenance, combining all essential functions in one high-efficiency, precision device.'
     ),
-    image: '/images/products/misc/AC1.jpg',
+    image: ac1,
+    images: [ac1, ac2, ac3],
     specs: [
       { label: t('الموديل', 'Model'), value: 'HO-S600' },
       { label: t('شهادة الجودة', 'Certification'), value: 'CE' },
@@ -611,7 +683,8 @@ export const products: Product[] = [
       'يُعد نظام FY-9018 و FY-9028 من الحلول المتقدمة لإصلاح هياكل السيارات، حيث يعتمد على أحدث التقنيات العالمية في مجال إصلاح هياكل المركبات، مما يوفر أداءً عاليًا وسرعة في تنفيذ أعمال الصيانة بجودة احترافية.',
       'The FY-9018 and FY-9028 are advanced car body repair systems built on the latest international technologies in vehicle body restoration, delivering high performance, speed, and professional-grade quality.'
     ),
-    image: '/images/products/misc/repair1.jpeg',
+    image: repair1,
+    images: [repair1, repair2, repair3, repair4],
     specs: [],
     features: [
       t('يعتمد على تقنيات عالمية متطورة في إصلاح هياكل السيارات', 'Built on the most advanced international IGBT inverter technology'),
@@ -683,7 +756,8 @@ export const products: Product[] = [
       'تُعد لمبة التجفيف بالأشعة تحت الحمراء المتحركة حلًا مثاليًا لورش الدهان، حيث تعمل كمساعد فعال في تنفيذ أعمال إصلاح الدهانات الصغيرة والمتوسطة بسرعة وكفاءة عالية.',
       'The mobile infrared baking lamp is an ideal solution for paint shops, serving as an effective assistant for small and medium paint repair jobs with high speed and efficiency.'
     ),
-    image: '/images/products/misc/2Lamp.jpg',
+    image: lamp2a,
+    images: [lamp2a, lamp2b, lamp2c, lamp2d, lamp2e],
     specs: [
       { label: t('عدد الشمعات', 'Number of Lamps'), value: '2' },
       { label: t('القدرة الكلية', 'Total Power'), value: '2000W' },
@@ -745,7 +819,8 @@ export const products: Product[] = [
       'تُعد لمبة التجفيف بالأشعة تحت الحمراء المتحركة حلًا مثاليًا لورش الدهان، حيث تعمل كمساعد فعال في تنفيذ أعمال إصلاح الدهانات الصغيرة والمتوسطة بسرعة وكفاءة عالية.',
       'The mobile infrared baking lamp is an ideal solution for paint shops, serving as an effective assistant for small and medium paint repair jobs with high speed and efficiency.'
     ),
-    image: '/images/products/misc/6lamp.jpg',
+    image: lamp6,
+    images: [lamp6],
     specs: [
       { label: t('عدد الشمعات', 'Number of Lamps'), value: '6' },
       { label: t('القدرة الكلية', 'Total Power'), value: '6000W' },
@@ -806,7 +881,8 @@ export const products: Product[] = [
       'يُعد هذا الجهاز حلاً متكاملاً لفحص وتنظيف رشاشات الوقود لمختلف أنواع السيارات حول العالم، حيث يساهم في تحسين أداء المحرك وزيادة كفاءته، مع تقليل الانبعاثات الضارة وضمان استقرار التشغيل.',
       'A complete solution for testing and cleaning fuel injectors for all types of vehicles worldwide, improving engine performance and efficiency while reducing harmful emissions and ensuring stable operation.'
     ),
-    image: '/images/products/misc/injector-cleaner-6-main.jpg',
+    image: cleaner,
+    images: [cleaner],
     specs: [],
     features: [
       t('تنظيف واختبار رشاشات الوقود بكفاءة عالية', 'Efficient fuel injector testing and cleaning'),
@@ -877,7 +953,8 @@ export const products: Product[] = [
       'جهاز ضبط زوايا العجلات ثلاثي الأبعاد بشاشة مزدوجة، يعمل بتقنية المسح الديناميكي بكاميرا HD مع تحكم إلكتروني في ارتفاع الكاميرا. يوفر دقة عالية وأداءً احترافياً لمراكز الصيانة.',
       'Double screen 3D wheel aligner with dynamic HD camera scanning and electronic controller for camera beam height adjustment. Delivers high precision and professional performance for service centers.'
     ),
-    image: '/images/products/misc/wheel-alignment-3d-zd-6-main.jpg',
+    image: zd6,
+    images: [zd6],
     specs: [],
     features: [
       t('تحكم إلكتروني في ارتفاع شعاع الكاميرا (أعلى وأسفل)', 'Electronic controller for camera beam height (up and down)'),
@@ -988,7 +1065,8 @@ export const products: Product[] = [
       'جهاز ضبط زوايا متطور ومتحرك بالكامل يعمل بالكاميرا والتحكم عن بُعد، مزود بنظام Align Assist وحساب مواصفات الـ Shim، ويدعم تطبيقات الحفرة والرافعة مع برمجيات متقدمة للدقة القصوى.',
       'Advanced moveable computerized 3D wheel alignment system with HD camera, remote controller, Align Assist System, and Shim Specification Calculate System. Supports pit and lift applications with high-precision software.'
     ),
-    image: '/images/products/misc/wheel-alignment-3d-zd-9-pro-main.jpg',
+    image: zd9pro,
+    images: [zd9pro],
     specs: [],
     features: [
       t('نظام Align Assist و Shim Specification Calculate System', 'Align Assist System & Shim Specification Calculate System'),

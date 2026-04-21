@@ -20,25 +20,7 @@ const Products = () => {
     }
   }, [searchParams]);
 
-  const filtered = activeTab === 'all' ? products : products.filter(p => p.category === activeTab);
-
-  // Deduplicate: show only one card per parentId group, hide the rest
-  const seenGroups = new Set<string>();
-  const displayProducts = filtered.filter(p => {
-    if (p.parentId) {
-      if (seenGroups.has(p.parentId)) return false;
-      seenGroups.add(p.parentId);
-    }
-    return true;
-  });
-
-  // Helper: get the link for a product (group page vs direct)
-  const getProductLink = (product: typeof products[0]) => {
-    if (product.parentId) {
-      return `/product-group/${product.parentId}`;
-    }
-    return `/product/${product.id}`;
-  };
+  const displayProducts = activeTab === 'all' ? products : products.filter(p => p.category === activeTab);
 
   return (
     <>
@@ -69,11 +51,7 @@ const Products = () => {
 
           <div className="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-8 max-sm:gap-6">
             {displayProducts.map((product) => {
-              const productLink = getProductLink(product);
-              // For grouped products, show group name instead
-              const groupInfo = product.parentId ? productGroups.find(g => g.groupId === product.parentId) : null;
-              const displayName = groupInfo ? groupInfo.name : product.name;
-              const displayBadge = groupInfo ? undefined : product.badge; // hide individual badge for group card
+              const productLink = `/product/${product.id}`;
 
               return (
               <div
@@ -88,19 +66,18 @@ const Products = () => {
                       className="max-h-full max-w-full h-auto w-auto object-contain group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                     />
-                    {displayBadge && (
+                    {product.badge && (
                       <span className="absolute top-4 ltr:left-4 rtl:right-4 bg-primary text-primary-foreground px-3 py-1 rounded-full text-xs font-bold shadow-md z-10">
-                        {t(displayBadge.ar, displayBadge.en)}
+                        {t(product.badge.ar, product.badge.en)}
                       </span>
                     )}
                   </div>
                 </Link>
                 <div className="p-6 max-sm:p-5 flex-1 flex flex-col">
                   <Link to={productLink}>
-                    <h3 className="text-xl font-extrabold text-foreground mb-1 hover:text-primary transition-colors">{t(displayName.ar, displayName.en)}</h3>
+                    <h3 className="text-xl font-extrabold text-foreground mb-1 hover:text-primary transition-colors">{t(product.name.ar, product.name.en)}</h3>
                   </Link>
-                  {!groupInfo && <p className="text-sm text-primary font-bold mb-3">{product.model}</p>}
-                  {groupInfo && <p className="text-sm text-primary font-bold mb-3">{t('اختر النوع المناسب', 'Choose the right type')}</p>}
+                  <p className="text-sm text-primary font-bold mb-3">{product.model}</p>
                   <p className="text-[15px] text-muted-foreground leading-relaxed mb-6 line-clamp-3 flex-1">{t(product.description.ar, product.description.en)}</p>
                   <div className="flex gap-3 mt-auto">
                     <Link

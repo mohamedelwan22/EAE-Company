@@ -111,7 +111,6 @@ export interface Product {
   specs: ProductSpec[];
   features: { ar: string; en: string }[];
   badge?: { ar: string; en: string };
-  parentId?: string;
   origin?: string;
   whatsappText: { ar: string; en: string };
   accessories?: { ar: string; en: string }[];
@@ -120,7 +119,6 @@ export interface Product {
     ar: { label: string; value: string }[];
     en: { label: string; value: string }[];
   };
-  groupId?: string;
   afterSales?: { ar: string; en: string };
 }
 
@@ -299,7 +297,6 @@ export const products: Product[] = [
   {
     id: 'car-lift-2post-closed',
     category: 'car-lift',
-    parentId: 'car-lift-2post',
     categoryLabel: t('رافعات السيارات', 'Car Lifts'),
     name: t('رافعة 2 عمود مقفولة', '2 Post Closed Car Lift'),
     model: 'LD-240T',
@@ -345,7 +342,6 @@ export const products: Product[] = [
   {
     id: 'car-lift-2post-open',
     category: 'car-lift',
-    parentId: 'car-lift-2post',
     categoryLabel: t('رافعات السيارات', 'Car Lifts'),
     name: t('رافعة 2 عمود مفتوحة', '2 Post Open Car Lift'),
     model: 'LD-240TS',
@@ -386,7 +382,6 @@ export const products: Product[] = [
   {
     id: 'car-lift-scissor-ground',
     category: 'car-lift',
-    parentId: 'car-lift-scissor',
     categoryLabel: t('رافعات السيارات', 'Car Lifts'),
     name: t('رافعة مقصية أرضية', 'Ground Scissor Car Lift'),
     model: 'LC-400 | LD-S610',
@@ -438,7 +433,6 @@ export const products: Product[] = [
   {
     id: 'car-lift-scissor-balance',
     category: 'car-lift',
-    parentId: 'car-lift-scissor',
     categoryLabel: t('رافعات السيارات', 'Car Lifts'),
     name: t('رافعة مقصية مزدوجة بميزان', 'Double Scissor Alignment Lift'),
     model: 'BLC-350',
@@ -749,7 +743,6 @@ export const products: Product[] = [
     id: 'infrared-lamp-2',
     name: t('شمعات تجفيف دهان بالأشعة تحت الحمراء – 2 شمعة', 'Infrared Baking Lamp – 2 Lamps'),
     category: 'misc',
-    parentId: 'infrared-lamp',
     categoryLabel: t('منتجات متنوعة', 'Misc Products'),
     model: '2 Lamps',
     description: t(
@@ -812,7 +805,6 @@ export const products: Product[] = [
     id: 'infrared-lamp-6',
     name: t('شمعات تجفيف دهان بالأشعة تحت الحمراء – 6 شمعات', 'Infrared Baking Lamp – 6 Lamps'),
     category: 'misc',
-    parentId: 'infrared-lamp',
     categoryLabel: t('منتجات متنوعة', 'Misc Products'),
     model: '6 Lamps',
     description: t(
@@ -946,7 +938,6 @@ export const products: Product[] = [
     id: 'wheel-alignment-3d-zd-6',
     name: t('جهاز ضبط زوايا العجلات ثلاثي الأبعاد – موديل 3D-ZD-6', '3D Wheel Alignment – Model 3D-ZD-6'),
     category: 'misc',
-    parentId: 'wheel-alignment',
     categoryLabel: t('منتجات متنوعة', 'Misc Products'),
     model: '3D-ZD-6',
     description: t(
@@ -1058,7 +1049,6 @@ export const products: Product[] = [
     id: 'wheel-alignment-3d-zd-9-pro',
     name: t('جهاز ضبط زوايا العجلات ثلاثي الأبعاد المتقدم – موديل 3D-ZD-9 Pro', 'Advanced 3D Wheel Alignment – Model 3D-ZD-9 Pro'),
     category: 'misc',
-    parentId: 'wheel-alignment',
     categoryLabel: t('منتجات متنوعة', 'Misc Products'),
     model: '3D-ZD-9 Pro',
     description: t(
@@ -1152,8 +1142,6 @@ export const products: Product[] = [
   },
   {
     id: 'compressor-lgfd-15b',
-    groupId: 'compressor-screw',
-    parentId: 'compressor-screw',
     category: 'compressor',
     categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
     name: t('كمبروسر هواء سكرو LGFD-15B', 'LGFD-15B Screw Air Compressor'),
@@ -1216,8 +1204,6 @@ export const products: Product[] = [
   },
   {
     id: 'compressor-lgfd-22b',
-    groupId: 'compressor-screw',
-    parentId: 'compressor-screw',
     category: 'compressor',
     categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
     name: t('كمبروسر هواء سكرو LGFD-22B', 'LGFD-22B Screw Air Compressor'),
@@ -1273,8 +1259,6 @@ export const products: Product[] = [
   },
   {
     id: 'compressor-lgfd-30b',
-    groupId: 'compressor-screw',
-    parentId: 'compressor-screw',
     category: 'compressor',
     categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
     name: t('كمبروسر هواء سكرو LGFD-30B', 'LGFD-30B Screw Air Compressor'),
@@ -1324,8 +1308,6 @@ export const products: Product[] = [
   },
   {
     id: 'compressor-lgfd-37b',
-    groupId: 'compressor-screw',
-    parentId: 'compressor-screw',
     category: 'compressor',
     categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
     name: t('كمبروسر هواء سكرو LGFD-37B', 'LGFD-37B Screw Air Compressor'),
@@ -1398,40 +1380,7 @@ export interface ProductGroup {
   description?: { ar: string; en: string };
 }
 
-export const productGroups: ProductGroup[] = [
-  {
-    groupId: 'car-lift-2post',
-    name: t('رافعة 2 عمود', '2 Post Car Lift'),
-    category: 'car-lift',
-    categoryLabel: t('رافعات السيارات', 'Car Lifts'),
-  },
-  {
-    groupId: 'car-lift-scissor',
-    name: t('رافعة مقصية', 'Scissor Car Lift'),
-    category: 'car-lift',
-    categoryLabel: t('رافعات السيارات', 'Car Lifts'),
-  },
-  {
-    groupId: 'infrared-lamp',
-    name: t('شمعات تجفيف دهان بالأشعة تحت الحمراء', 'Infrared Baking Lamp'),
-    description: t('اختر عدد الشمعات المناسب لاحتياجات ورشتك', 'Choose the number of lamps that suits your workshop needs'),
-    category: 'misc',
-    categoryLabel: t('منتجات متنوعة', 'Misc Products'),
-  },
-  {
-    groupId: 'wheel-alignment',
-    name: t('جهاز ضبط زوايا العجلات ثلاثي الأبعاد', '3D Wheel Alignment'),
-    description: t('اختر الموديل المناسب لاحتياجات مركزك', 'Choose the model that suits your center needs'),
-    category: 'misc',
-    categoryLabel: t('منتجات متنوعة', 'Misc Products'),
-  },
-  {
-    groupId: 'compressor-screw',
-    name: t('كمبروسر هواء سكرو', 'Screw Air Compressor'),
-    category: 'compressor',
-    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
-  },
-];
+export const productGroups: ProductGroup[] = [];
 
 export const getProductGroup = (groupId: string) => productGroups.find(g => g.groupId === groupId);
-export const getProductsByGroup = (groupId: string) => products.filter(p => p.parentId === groupId);
+export const getProductsByGroup = (groupId: string) => products.filter((p: any) => p.parentId === groupId);

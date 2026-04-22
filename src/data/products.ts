@@ -32,6 +32,7 @@ import tool2 from '@/assets/tool2.jpeg'
 
 // spray-booth
 import sprayEcono from '@/assets/spray-econo.png'
+import sprayEcono2 from '@/assets/spray-econo-new.png'
 import filter1 from '@/assets/filter1.jpeg'
 import filter2 from '@/assets/filter2.jpeg'
 import bzb from '@/assets/bzb.png'
@@ -139,7 +140,7 @@ export const products: Product[] = [
     category: 'spray-booth',
     categoryLabel: t('أفران الدهان', 'Spray Booths'),
     name: t('فرن الدهان EAE 8000', ' Spray Booth EAE 8000 '),
-    model: 'EAE-8000 (JZJ-8000AU) L-Type',
+    model: 'EAE-8000 L-Type',
     description: t(
       'تعد كابينة دهان سيارات EAE-8000 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. فهي تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا، تضمن خروج السيارة بعد الدهان بأعلى جودة وفق أقصى معايير السلامة المهنية.',
       'The EAE-8000 car spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems to provide a completely clean working environment, ensuring the vehicle exits with the highest quality finish according to the strictest professional safety standards.'
@@ -333,8 +334,8 @@ export const products: Product[] = [
       'تعد كابينة دهان سيارات EAE-8015 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا.',
       'The EAE-8015 spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems.'
     ),
-    image: sprayEcono,
-    images: [sprayEcono],
+    image: sprayEcono2,
+    images: [sprayEcono2],
     specs: [
       { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5000 × 3300 mm' },
       { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 3900 × 2650 mm' },
@@ -487,7 +488,7 @@ export const products: Product[] = [
     id: 'medium-spray-booth',
     category: 'spray-booth',
     categoryLabel: t('أفران الدهان', 'Spray Booths'),
-    name: t('فرن الدهان المتوسط', 'Medium Spray Booth'),
+    name: t('فرن الدهان EAE-8014', 'Medium Spray Booth'),
     model: 'EAE-8014 (M Type)',
     description: t(
       'تعد كابينة دهان سيارات EAE-8014 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. فهي تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا، تضمن خروج السيارة بعد الدهان بأعلى جودة وفق أقصى معايير السلامة المهنية.',
@@ -530,7 +531,7 @@ export const products: Product[] = [
       t('هيكل رباعي مطلي بالمسحوق مع سحب هواء من الجانب العلوي', 'Powder-coated quad-frame structure with top-side air intake'),
     ],
     whatsappText: t(
-      'مرحباً، أود الاستفسار عن كابينة الدهان المتوسطة EAE-8014',
+      'مرحباً، أود الاستفسار عن كابينة الدهان EAE-8014ة EAE-8014',
       "Hello, I'd like to inquire about the Medium Spray Booth EAE-8014"
     ),
   },
@@ -694,7 +695,7 @@ export const products: Product[] = [
     name: t('كمبروسر هواء سكرو LGFD-22B', 'LGFD-22B Screw Air Compressor'),
     model: 'LGFD-22B',
     description: t(
-      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بطرف ضاغط Rotorcomp الألماني، قوة 22 كيلوواط مناسب للورش المتوسطة والكبيرة.',
+      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بطرف ضاغط Rotorcomp الألماني، قوة 22 كيلوواط مناسب للورش EAE-8014ة والكبيرة.',
       'EVO oil-injected screw air compressor with German Rotorcomp air end, 22 kW — ideal for medium and large workshops.'
     ),
     image: comp22,
@@ -745,7 +746,7 @@ export const products: Product[] = [
     name: t('كمبروسر هواء سكرو LGFD-30B', 'LGFD-30B Screw Air Compressor'),
     model: 'LGFD-30B',
     description: t(
-      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بقوة 30 كيلوواط وسعة هواء 4.32 م³/د، مثالي للمنشآت الصناعية المتوسطة.',
+      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بقوة 30 كيلوواط وسعة هواء 4.32 م³/د، مثالي للمنشآت الصناعية EAE-8014ة.',
       'EVO oil-injected screw air compressor, 30 kW with 4.32 m³/min air capacity — ideal for mid-size industrial facilities.'
     ),
     image: comp,
@@ -966,7 +967,7 @@ export const products: Product[] = [
     categoryLabel: t('منتجات متنوعة', 'Misc Products'),
     model: '2 Lamps',
     description: t(
-      'تُعد لمبة التجفيف بالأشعة تحت الحمراء المتحركة حلًا مثاليًا لورش الدهان، حيث تعمل كمساعد فعال في تنفيذ أعمال إصلاح الدهانات الصغيرة والمتوسطة بسرعة وكفاءة عالية.',
+      'تُعد لمبة التجفيف بالأشعة تحت الحمراء المتحركة حلًا مثاليًا لورش الدهان، حيث تعمل كمساعد فعال في تنفيذ أعمال إصلاح الدهانات الصغيرة وEAE-8014ة بسرعة وكفاءة عالية.',
       'The mobile infrared baking lamp is an ideal solution for paint shops, serving as an effective assistant for small and medium paint repair jobs with high speed and efficiency.'
     ),
     image: lamp2a,
@@ -1029,7 +1030,7 @@ export const products: Product[] = [
     categoryLabel: t('منتجات متنوعة', 'Misc Products'),
     model: '6 Lamps',
     description: t(
-      'تُعد لمبة التجفيف بالأشعة تحت الحمراء المتحركة حلًا مثاليًا لورش الدهان، حيث تعمل كمساعد فعال في تنفيذ أعمال إصلاح الدهانات الصغيرة والمتوسطة بسرعة وكفاءة عالية.',
+      'تُعد لمبة التجفيف بالأشعة تحت الحمراء المتحركة حلًا مثاليًا لورش الدهان، حيث تعمل كمساعد فعال في تنفيذ أعمال إصلاح الدهانات الصغيرة وEAE-8014ة بسرعة وكفاءة عالية.',
       'The mobile infrared baking lamp is an ideal solution for paint shops, serving as an effective assistant for small and medium paint repair jobs with high speed and efficiency.'
     ),
     image: lamp6,
@@ -1369,7 +1370,7 @@ export const products: Product[] = [
 
 export const categories = [
   { id: 'all', ar: 'الكل', en: 'All' },
-  { id: 'spray-booth', ar: 'كابينات الرش', en: 'Spray Booths' },
+  { id: 'spray-booth', ar: 'أفران الرش', en: 'Spray Booths' },
   { id: 'car-lift', ar: 'روافع السيارات', en: 'Car Lifts' },
   { id: 'misc', ar: 'منتجات متنوعة', en: 'Misc Products' },
   { id: 'compressor', ar: 'ضاغطات الهواء', en: 'Air Compressors' },

@@ -111,7 +111,7 @@ const About = () => {
            <div className="relative z-10 max-w-3xl mx-auto">
              <h2 className="text-3xl md:text-5xl font-black text-white mb-6 leading-tight">{t('هل أنت مستعد لتجهيز ورشتك؟', 'Ready to equip your workshop?')}</h2>
              <p className="text-white/80 mb-10 text-xl">{t('تواصل معنا الآن للحصول على استشارة مجانية وعرض من أحدث منتجاتنا', 'Contact us now to get a free consultation and a quote for our latest products')}</p>
-             <a href="https://wa.me/966112706564" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-10 py-5 rounded-2xl font-bold text-xl hover:-translate-y-1 transition-all shadow-[0_8px_30px_rgba(37,211,102,0.3)] hover:shadow-[0_8px_40px_rgba(37,211,102,0.5)]">
+             <a href="https://wa.me/966503946848" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-10 py-5 rounded-2xl font-bold text-xl hover:-translate-y-1 transition-all shadow-[0_8px_30px_rgba(37,211,102,0.3)] hover:shadow-[0_8px_40px_rgba(37,211,102,0.5)]">
                <MessageCircle size={28} />
                {t('تواصل معنا عبر واتساب', 'Contact via WhatsApp')}
              </a>

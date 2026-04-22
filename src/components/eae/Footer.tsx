@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLang } from '@/contexts/LanguageContext';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
 
 const Footer = () => {
   const { t } = useLang();
@@ -45,11 +45,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-muted-foreground text-sm">
                 <MapPin size={18} className="text-primary shrink-0 mt-0.5" />
-                {t('الرياض 235 ، مخرج 18', 'Riyadh, Exit 18')}
+                {t('الرياض - الدائري الجنوبي - مخرج 18', 'Riyadh - Southern Ring Road - Exit 18')}
               </div>
               <div className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Phone size={18} className="text-primary shrink-0" />
-                <span dir="ltr">+966 11 270 6564</span>
+                <a href="tel:+966112706564" dir="ltr" className="hover:text-primary transition-colors">+966 11 270 6564</a>
+              </div>
+              <div className="flex items-center gap-3 text-muted-foreground text-sm">
+                <MessageCircle size={18} className="text-primary shrink-0" />
+                <a href="https://wa.me/966503946848" target="_blank" rel="noopener noreferrer" dir="ltr" className="hover:text-primary transition-colors">+966 50 394 6848</a>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground text-sm">
                 <Mail size={18} className="text-primary shrink-0" />

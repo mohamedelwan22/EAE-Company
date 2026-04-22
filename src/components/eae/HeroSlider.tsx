@@ -23,7 +23,7 @@ const slides: Slide[] = [
   {
     image: heroSprayBooth,
     badge: { ar: ' الرائدون في المملكة', en: ' Kingdom Leaders' },
-    title: { ar: 'كابينات الرش الاحترافية', en: 'Professional Spray Booths' },
+    title: { ar: 'أفران الدهان الاحترافية', en: 'Professional Spray Booths' },
     subtitle: { ar: 'أنظمة دهان متكاملة بمعايير عالمية للورش الاحترافية', en: 'Complete painting systems with international standards' },
     cta1: { ar: 'تصفح المنتجات', en: 'Browse Products' },
     cta2: { ar: 'تواصل معنا', en: 'Contact Us' },
@@ -56,9 +56,9 @@ const slides: Slide[] = [
     image: heroMainMachine,
     badge: { ar: "منتجاتنا المميزة", en: "Our Featured Products" },
     title: { ar: "رافعات السيارات الاحترافية", en: "Professional Car Lifts" },
-    subtitle: { 
-      ar: "رافعات هيدروليكية عالية الجودة لجميع أنواع الورش", 
-      en: "High quality hydraulic lifts for all workshop types" 
+    subtitle: {
+      ar: "رافعات هيدروليكية عالية الجودة لجميع أنواع الورش",
+      en: "High quality hydraulic lifts for all workshop types"
     },
     cta1: { ar: 'تصفح المنتجات', en: 'Browse Products' },
     cta2: { ar: 'تواصل معنا', en: 'Contact Us' },
@@ -122,20 +122,18 @@ const HeroSlider = () => {
         {slides.map((slide, i) => (
           <div
             key={i}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${
-              i === current ? 'opacity-100 z-[2]' : 'opacity-0 z-[1]'
-            }`}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ${i === current ? 'opacity-100 z-[2]' : 'opacity-0 z-[1]'
+              }`}
             style={{ backgroundImage: `url(${slide.image})` }}
           >
             {/* Overlay */}
             <div className="absolute inset-0 bg-black/50" />
             {/* Content */}
             <div
-              className={`absolute inset-0 flex flex-col items-center justify-center pt-24 pb-12 px-6 max-md:px-4 text-center z-[3] transition-all duration-1000 ${
-                i === current
+              className={`absolute inset-0 flex flex-col items-center justify-center pt-24 pb-12 px-6 max-md:px-4 text-center z-[3] transition-all duration-1000 ${i === current
                   ? 'opacity-100 translate-y-0'
                   : 'opacity-0 translate-y-12'
-              }`}
+                }`}
               style={{ transitionDelay: i === current ? '0.3s' : '0s' }}
             >
               <div className="w-full max-w-[880px] mx-auto">
@@ -180,11 +178,10 @@ const HeroSlider = () => {
           <button
             key={i}
             onClick={() => handleDotClick(i)}
-            className={`h-2.5 rounded-full border-none cursor-pointer p-0 transition-all duration-300 ${
-              i === current
+            className={`h-2.5 rounded-full border-none cursor-pointer p-0 transition-all duration-300 ${i === current
                 ? 'bg-primary w-[30px]'
                 : 'bg-white/35 w-2.5'
-            }`}
+              }`}
           />
         ))}
       </div>

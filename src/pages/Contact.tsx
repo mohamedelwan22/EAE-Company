@@ -11,7 +11,7 @@ import {
 } from 'lucide-react';
 import { categories } from '@/data/products';
 
-const CONTACT_WHATSAPP = '966112706564';
+const CONTACT_WHATSAPP = '966503946848';
 
 /* ------------------------------------------------------------------ */
 /*  New Product Inquiry Form                                          */
@@ -390,10 +390,10 @@ const ContactInfoSidebar = () => {
       title: t('واتساب', 'WhatsApp'),
       content: (
         <a
-          href="https://wa.me/966112706564" target="_blank" rel="noopener noreferrer"
+          href="https://wa.me/966503946848" target="_blank" rel="noopener noreferrer"
           className="text-white/80 hover:text-[#25D366] transition-colors text-sm block"
         >
-          wa.me/966112706564
+          wa.me/966503946848
         </a>
       ),
     },
@@ -411,7 +411,7 @@ const ContactInfoSidebar = () => {
       title: t('العنوان', 'Address'),
       content: (
         <p className="text-white/70 leading-relaxed text-sm">
-          {t('الرياض، مخرج 235، رقم 18', 'Riyadh, Exit 235, No. 18')}
+          {t('الرياض - الدائري الجنوبي - مخرج 18', 'Riyadh - Southern Ring Road - Exit 18')}
         </p>
       ),
     },
@@ -445,7 +445,7 @@ const ContactInfoSidebar = () => {
 
       {/* Quick WhatsApp CTA */}
       <a
-        href="https://wa.me/966112706564"
+        href="https://wa.me/966503946848"
         target="_blank" rel="noopener noreferrer"
         className="block bg-[#25D366] hover:bg-[#1fb955] text-white p-6 rounded-3xl shadow-lg transition-all hover:-translate-y-1 hover:shadow-xl text-center group"
       >

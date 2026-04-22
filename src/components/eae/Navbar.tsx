@@ -5,7 +5,7 @@ import { useTheme } from '@/contexts/ThemeContext';
 
 import { Sun, Moon, Globe, Menu, X, MessageCircle } from 'lucide-react';
 
-const WHATSAPP_URL = 'https://wa.me/966112706564';
+const WHATSAPP_URL = 'https://wa.me/966503946848';
 
 const Navbar = () => {
   const { t, toggleLang, lang } = useLang();

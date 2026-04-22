@@ -52,7 +52,7 @@ const ProductDetail = () => {
     );
   }
 
-  const waLink = "https://wa.me/966112706564?text=مرحباً،%20أود%20الاستفسار%20عن%20منتجاتكم";
+  const waLink = "https://wa.me/966503946848?text=مرحباً،%20أود%20الاستفسار%20عن%20منتجاتكم";
 
   const related = products.filter(p => p.category === product.category && p.id !== product.id).slice(0, 3);
 
@@ -153,7 +153,7 @@ const ProductDetail = () => {
                   {t('طلب عرض سعر', 'Request Quote')}
                 </a>
                 <a
-                  href={`tel:+${WHATSAPP_NUMBER}`}
+                  href="tel:+966112706564"
                   className="inline-flex items-center justify-center gap-2 bg-secondary border border-border text-foreground px-6 py-4 rounded-full font-bold text-base hover:border-primary hover:text-primary transition-all"
                 >
                   <Phone size={20} />

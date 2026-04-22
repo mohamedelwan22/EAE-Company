@@ -128,7 +128,7 @@ export interface Product {
 
 const t = (ar: string, en: string) => ({ ar, en });
 
-export const WHATSAPP_NUMBER = '966112706564';
+export const WHATSAPP_NUMBER = '966503946848';
 
 const compressorSharedImages = [comp, comp2, comp3, comp4, comp5, comp6, comp7, comp8, comp9, comp10, comp11, comp12];
 

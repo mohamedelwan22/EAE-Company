@@ -70,7 +70,7 @@ const ProductsSection = () => {
                     {t('التفاصيل', 'Details')}
                   </Link>
                   <a
-                    href="https://wa.me/966112706564?text=مرحباً،%20أود%20الاستفسار%20عن%20منتجاتكم"
+                    href="https://wa.me/966503946848?text=مرحباً،%20أود%20الاستفسار%20عن%20منتجاتكم"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-2.5 px-3.5 rounded-lg bg-[#25D366] text-white text-xl cursor-pointer flex items-center justify-center hover:scale-110 hover:shadow-[0_4px_15px_rgba(37,211,102,0.4)] transition-all"

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { MessageCircle, ArrowUp } from 'lucide-react';
 
-const WHATSAPP_URL = 'https://wa.me/966112706564';
+const WHATSAPP_URL = 'https://wa.me/966503946848';
 
 const FloatingWidgets = () => {
   const [showBtt, setShowBtt] = useState(false);

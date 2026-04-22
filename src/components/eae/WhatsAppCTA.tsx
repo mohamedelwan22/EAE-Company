@@ -1,7 +1,7 @@
 import { useLang } from '@/contexts/LanguageContext';
 import { MessageCircle } from 'lucide-react';
 
-const WHATSAPP_URL = 'https://wa.me/966112706564';
+const WHATSAPP_URL = 'https://wa.me/966503946848';
 
 const WhatsAppCTA = () => {
   const { t } = useLang();

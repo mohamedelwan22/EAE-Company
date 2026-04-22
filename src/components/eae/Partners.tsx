@@ -1,27 +1,65 @@
+import { useRef } from 'react';
 import { useLang } from '@/contexts/LanguageContext';
-import { Building2 } from 'lucide-react';
+import autohub from '@/assets/autohub.png';
+import kiajabr from '@/assets/elgaber.jpeg';
+import naghi from '@/assets/nagy.jpeg';
+import hafel from '@/assets/hafil.png';
+import budget from '@/assets/budget.jpeg';
 
 const Partners = () => {
   const { t } = useLang();
+  const trackRef = useRef<HTMLDivElement>(null);
+
+  const partners = [
+    { name: t('أوتوهب عبداللطيف جميل', 'Autohub Abdul Latif Jameel'), logo: autohub },
+    { name: t('كيا الجبر', 'Kia Al-Jabr'), logo: kiajabr },
+    { name: t('محمد يوسف ناغي', 'Mohamed Yousuf Naghi'), logo: naghi },
+    { name: t('حافل', 'Hafel'), logo: hafel },
+    { name: t('بدجت', 'Budget'), logo: budget },
+  ];
+
+  const partnersDoubled = [...partners, ...partners, ...partners, ...partners];
 
   return (
-    <section className="py-[var(--section-py)] bg-background">
-      <div className="eae-container">
-        <div className="section-header text-center mb-16">
-          <h2 className="section-title text-3xl md:text-4xl font-extrabold mb-4 text-foreground">{t('شركاؤنا المعتمدون', 'Our Trusted Partners')}</h2>
-          <div className="w-20 h-1.5 bg-primary mx-auto rounded-full"></div>
-        </div>
+    <section className="py-[var(--section-py)] bg-background/50 border-y border-border/50">
+      <style>{`
+        @keyframes marquee {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-25%); }
+        }
+      `}</style>
 
-        <div className="flex justify-center">
-          <div className="bg-card border border-border rounded-3xl p-10 max-w-sm text-center shadow-[var(--shadow-md)] hover:shadow-[var(--shadow-xl)] hover:-translate-y-2 hover:border-primary transition-all duration-500">
-            <div className="w-28 h-28 mx-auto mb-6 bg-secondary rounded-2xl flex items-center justify-center text-primary shadow-inner">
-               <Building2 size={56} />
+      <div className="eae-container mb-8">
+        <div className="section-header text-center">
+          <h2 className="section-title">
+            {t('شركاؤنا المعتمدون', 'Our Trusted Partners')}
+          </h2>
+        </div>
+      </div>
+
+      {/* الـ container الخارجي */}
+      <div style={{ overflow: 'hidden', width: '100%', direction: 'ltr' }}>
+        <div
+          ref={trackRef}
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            animation: 'marquee 25s linear infinite',
+            width: 'max-content',
+          }}
+          onMouseEnter={() => trackRef.current && (trackRef.current.style.animationPlayState = 'paused')}
+          onMouseLeave={() => trackRef.current && (trackRef.current.style.animationPlayState = 'running')}
+        >
+          {partnersDoubled.map((p, i) => (
+            <div key={i} style={{ width: '220px', height: '130px', flexShrink: 0, padding: '16px' }}>
+              <img 
+                src={p.logo} 
+                alt={p.name} 
+                style={{ width: '100%', height: '100%', objectFit: 'contain' }} 
+                loading="lazy"
+              />
             </div>
-            <h3 className="text-2xl font-bold text-foreground mb-4">{t('عبداللطيف جميل', 'Abdul Latif Jameel')}</h3>
-            <p className="text-muted-foreground leading-relaxed">
-              {t('شريكنا الاستراتيجي في تقديم أفضل معدات الصيانة والورش باعتماد أعلى المواصفات العالمية المعتمدة.', 'Our strategic partner in providing the best maintenance and workshop equipment with the highest global certified specs.')}
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

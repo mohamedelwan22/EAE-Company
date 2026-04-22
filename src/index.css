@@ -264,6 +264,36 @@
     z-index: 10000;
     transition: width 0.1s linear;
   }
+  /* Logo Carousel Animation */
+  .logo-carousel-container {
+    @apply relative w-full overflow-hidden py-10;
+  }
+  
+  .logo-carousel-track {
+    @apply flex w-max;
+    animation: logo-scroll 30s linear infinite;
+  }
+  
+  .logo-carousel-track:hover {
+    animation-play-state: paused;
+  }
+  
+  @keyframes logo-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .logo-item {
+    @apply flex items-center justify-center px-12;
+  }
+  
+  .logo-img {
+    @apply grayscale opacity-60 transition-all duration-500 h-[100px] w-auto object-contain;
+  }
+  
+  .logo-item:hover .logo-img {
+    @apply grayscale-0 opacity-100 scale-110;
+  }
 }
 
 @media (max-width: 480px) {

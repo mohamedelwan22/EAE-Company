@@ -63,7 +63,7 @@ const Products = () => {
                     <img
                       src={product.image}
                       alt={t(product.name.ar, product.name.en)}
-                      className="max-h-full max-w-full h-auto w-auto object-contain group-hover:scale-105 transition-transform duration-500"
+                      className="max-h-full max-w-full h-auto w-auto object-contain scale-x-[-1] group-hover:scale-x-[-1.05] group-hover:scale-y-105 transition-transform duration-500"
                       loading="lazy"
                     />
                     {product.badge && (

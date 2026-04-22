@@ -96,6 +96,7 @@ import compShared1 from '@/assets/main-compress.png'
 import compShared2 from '@/assets/main-compress (2).png'
 import comp15Extra1 from '@/assets/main-comp15.png'
 import comp15Extra2 from '@/assets/main-comp15 (2).png'
+import integratedMain from '@/assets/integrated-main.jpg'
 
 
 
@@ -648,7 +649,7 @@ export const products: Product[] = [
       'EVO oil-injected screw air compressor with German Rotorcomp air end. High efficiency, low noise, 12-month warranty.'
     ),
     image: compShared1,
-    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, comp15, comp15_2, comp15_3, comp15_4, comp15_5, comp15_6, comp15_7, comp15_8, comp15_9, comp15_10, ...compressorSharedImages],
+    images: [compShared1, compShared2,  comp15, comp15_2, comp15_3, comp15_4, comp15_5, comp15_6, comp15_7, comp15_8, comp15_9, comp15_10, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '15' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -699,7 +700,7 @@ export const products: Product[] = [
       'EVO oil-injected screw air compressor with German Rotorcomp air end, 22 kW — ideal for medium and large workshops.'
     ),
     image: compShared1,
-    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, comp22, comp22_2, comp22_3, ...compressorSharedImages],
+    images: [compShared1, compShared2,  comp22, comp22_2, comp22_3, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '22' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -750,7 +751,7 @@ export const products: Product[] = [
       'EVO oil-injected screw air compressor, 30 kW with 4.32 m³/min air capacity — ideal for mid-size industrial facilities.'
     ),
     image: compShared1,
-    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, ...compressorSharedImages],
+    images: [compShared1, compShared2,  ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '30' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -800,7 +801,7 @@ export const products: Product[] = [
       'The most powerful EVO oil-injected screw compressor in the series — 37 kW, 5.8 m³/min — built for large industrial facilities.'
     ),
     image: compShared1,
-    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, comp37, ...compressorSharedImages],
+    images: [compShared1, compShared2,  comp37, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '37' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -850,8 +851,8 @@ export const products: Product[] = [
       'كمبروسر هواء متكامل بقوة 15 كيلوواط (20 حصان) مزود بمجفف هواء مدمج وخزان سعة 500 لتر — حل شامل ومتكامل في وحدة واحدة مثالي للورش الاحترافية.',
       'Integrated air compressor 15 kW (20 HP) with built-in air dryer and 500-liter tank — a complete all-in-one solution ideal for professional workshops.'
     ),
-    image: compShared1,
-    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, ...compressorSharedImages],
+    image: integratedMain,
+    images: [ compShared2, comp15Extra1, comp15Extra2, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك', 'Motor Power'), value: '15 kW / 20 HP' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },

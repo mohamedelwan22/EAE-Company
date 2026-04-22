@@ -187,6 +187,124 @@ export const products: Product[] = [
   },
 
   {
+    id: 'medium-spray-booth',
+    category: 'spray-booth',
+    categoryLabel: t('أفران الدهان', 'Spray Booths'),
+    name: t('فرن الدهان EAE-8014', 'Medium Spray Booth'),
+    model: 'EAE-8014 (M Type)',
+    description: t(
+      'تعد كابينة دهان سيارات EAE-8014 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. فهي تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا، تضمن خروج السيارة بعد الدهان بأعلى جودة وفق أقصى معايير السلامة المهنية.',
+      'The EAE-8014 car spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems to provide a completely clean working environment, ensuring the vehicle exits with the highest quality finish according to the strictest professional safety standards.'
+    ),
+    image: EAEMed,
+    images: [EAEMed],
+    specs: [
+      { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5000 × 3300 mm' },
+      { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 3900 × 2650 mm' },
+      { label: t('إجمالي القدرة الكهربائية', 'Total Power'), value: '18 kW' },
+      { label: t('الفولتية', 'Voltage'), value: '380V / 50Hz / 3Ph' },
+      { label: t('الوزن', 'Weight'), value: '≈ 3000 kg' },
+      { label: t('ألواح الحوائط', 'Wall Panels'), value: '50mm Rock Wool / صوف صخري مزدوج العزل' },
+      { label: t('الباب الرئيسي', 'Main Door'), value: '4 Panels Aluminum — 3000 × 2600 mm' },
+      { label: t('مروحة الدخول', 'Inlet Fan'), value: '2 × 7.5kW Centrifugal (20,000 m³/h)' },
+      { label: t('مروحة الخروج', 'Outlet Fan'), value: '1 × 7.5kW Centrifugal (34,375 m³/h)' },
+      { label: t('الإضاءة السقفية', 'Ceiling Lights'), value: '8 × 4 LED (32 lamps @ 45°)' },
+      { label: t('الإضاءة الجانبية', 'Side Lights'), value: '8 LED Units' },
+      { label: t('الموقد (اختياري)', 'Burner (Optional)'), value: 'RIELLO GS — 140,000 Kcal/h' },
+      { label: t('أقصى حرارة', 'Max Temperature'), value: '80°C' },
+      { label: t('استهلاك الوقود', 'Fuel Consumption'), value: '8–9 L/h (Diesel)' },
+      { label: t('اللون', 'Color'), value: 'Gray & Black / رمادي وأسود' },
+      { label: t('بلد المنشأ', 'Origin'), value: 'China / الصين' },
+    ],
+    features: [
+      t('ألواح صوف صخري 50 مم مزدوجة العزل مقاومة للحريق بنظام التعشيق', '50mm double-insulated rock wool panels, flame-retardant with interlocking system'),
+      t('أرضية بارتفاع 300 مم مع شبكات صلب مسطحة و5 صفوف شبكات أرضية', '300mm platform with flat steel grids and 5 rows of floor gratings'),
+      t('باب رئيسي 4 ألواح ألومنيوم مع زجاج مقاوم للحرارة 8 مم', '4-panel aluminum main door with 8mm heat-resistant glass'),
+      t('باب طوارئ جانبي 900×2000 مم مع مانع انفجار', '900×2000mm emergency side door with explosion preventer'),
+      t('مروحتان طاردتان مركزيتان بقدرة 15 كيلو وات (20,000 م³/ساعة)', '2 centrifugal inlet fans at 15kW total (20,000 m³/h)'),
+      t('مروحة عادم 7.5 كيلو وات بسعة 34,375 م³/ساعة', '7.5kW exhaust fan with 34,375 m³/h capacity'),
+      t('كابينة هواء من الصوف الصخري مع مجاري صلب مجلفن', 'Rock wool air cabinet with galvanized steel ducting'),
+      t('موقد ديزل إيطالي RIELLO GS اختياري بقدرة 140,000 Kcal/h', 'Optional Italian RIELLO GS diesel burner at 140,000 Kcal/h'),
+      t('تسخين سريع 5-8 دقائق حتى 60°C مع أقصى حرارة 80°C', 'Fast heating 5-8 min to 60°C, max 80°C'),
+      t('سقف من أنابيب صلب مجلفنة مع تجويف مطلي بالمسحوق', 'Galvanized steel tube roof beams with powder-coated plenum'),
+      t('32 لمبة LED سقفية بزاوية 45° + 8 وحدات إضاءة جانبية', '32 ceiling LED lamps at 45° angle + 8 side lighting units'),
+      t('فلترة ثلاثية المراحل: مبدئي (>90%) + سقف (>98%) + أرضية (>90%)', 'Triple-stage filtration: primary (>90%) + ceiling (>98%) + floor (>90%)'),
+      t('نظام تحكم ذكي مع ضبط حرارة ووقت ومفتاح طوارئ', 'Intelligent control system with temp/time setting & emergency stop'),
+      t('هيكل رباعي مطلي بالمسحوق مع سحب هواء من الجانب العلوي', 'Powder-coated quad-frame structure with top-side air intake'),
+    ],
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن كابينة الدهان EAE-8014ة EAE-8014',
+      "Hello, I'd like to inquire about the Medium Spray Booth EAE-8014"
+    ),
+  },
+
+  {
+    id: 'filters-spray-booth',
+    category: 'spray-booth',
+    categoryLabel: t('أفران الدهان', 'Spray Booths'),
+    name: t('فلتر فرن الدهان', 'Filters Spray Booth'),
+    model: 'EAE-FILTER',
+    description: t(
+      'تُعدّ فلاتر أفران الدهان مواد أساسية تُستخدم لالتقاط ومعالجة رذاذ الطلاء الناتج عن عملية الرش، وتتمثل وظيفتها الرئيسية في إزالة جزيئات رذاذ الطلاء من الهواء عن طريق الاعتراض الفيزيائي، وذلك لحماية البيئة والمعدات. تتكون فلاتر كابينة رش السيارات عادةً من ألياف زجاجية أحادية الشعيرة متصلة عالية المتانة، والتي يمكنها تخزين غبار رذاذ الطلاء بكفاءة. مادة الترشيح مصنوعة من القطن الأخضر والأبيض، والجانب الأخضر هو الجانب المواجه للهواء، ويتميز بمرونته وانخفاض فقدان الضغط.',
+      'Spray booth filters are essential materials used to capture and treat paint spray mist generated during the spraying process. Their primary function is to remove paint spray particles from the air through physical interception, protecting both the environment and equipment. Spray booth filters are typically made of high-durability single-filament glass fibers capable of efficiently storing paint spray dust. The filter media is made of green and white cotton — the green side faces the airflow, offering flexibility and low pressure drop.'
+    ),
+    image: filter1,
+    images: [filter1, filter2],
+    specs: [
+      { label: t('المادة', 'Material'), value: 'Glass Fiber / ألياف زجاجية' },
+      { label: t('مادة الترشيح', 'Filter Media'), value: 'Green & White Cotton / قطن أخضر وأبيض' },
+      { label: t('الوظيفة', 'Function'), value: 'Paint Mist Filtration / ترشيح رذاذ الطلاء' },
+    ],
+    features: [
+      t('ألياف زجاجية أحادية الشعيرة عالية المتانة', 'High-durability single-filament glass fibers'),
+      t('تخزين فعال لغبار رذاذ الطلاء', 'Efficient paint spray dust storage'),
+      t('مادة ترشيح من القطن الأخضر والأبيض', 'Green and white cotton filter media'),
+      t('الجانب الأخضر مواجه للهواء بمرونة عالية', 'Green side faces airflow with high flexibility'),
+      t('انخفاض فقدان الضغط أثناء التشغيل', 'Low pressure drop during operation'),
+      t('حماية البيئة والمعدات من جزيئات الطلاء', 'Protects environment and equipment from paint particles'),
+    ],
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن فلاتر أفران الدهان EAE-FILTER',
+      "Hello, I'd like to inquire about Spray Booth Filters EAE-FILTER"
+    ),
+  },
+
+  {
+    id: 'spray-booth-economic',
+    category: 'spray-booth',
+    categoryLabel: t('أفران الدهان  ', 'Spray Booths '),
+    name: t('فرن الدهان EAE 8015', 'EAE 8015 Spray Booth'),
+    model: 'EAE-8015  E-Type',
+    description: t(
+      'تعد كابينة دهان سيارات EAE-8015 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا.',
+      'The EAE-8015 spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems.'
+    ),
+    image: sprayEcono2,
+    images: [sprayEcono2],
+    specs: [
+      { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5000 × 3300 mm' },
+      { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 3900 × 2650 mm' },
+      { label: t('سمك الألواح', 'Panel Thickness'), value: '42.5mm EPS' },
+      { label: t('قدرة المراوح', 'Fan Power'), value: '12KW' },
+      { label: t('مجموعات الإضاءة', 'Lighting Groups'), value: '8 LED' },
+      { label: t('نظام الفلترة', 'Filtration System'), value: 'Triple-stage / ثلاثي المراحل' },
+      { label: t('بلد المنشأ', 'Origin'), value: 'China / الصين' }
+    ],
+    features: [
+      t('ألواح حوائط من الفوم الأبيض EPS بسمك 42.5 مم بنظام التعشيق', 'EPS foam wall panels 42.5mm thick with interlocking system'),
+      t('8 مجموعات إضاءة LED موزعة بزاوية 45 درجة', '8 LED lighting groups distributed at 45-degree angles'),
+      t('3 مراوح بقدرة 4 كيلو وات لكل واحدة بإجمالي 12 كيلو وات', '3 fans at 4KW each, total 12KW for stable airflow'),
+      t('نظام فلترة ثلاثي المراحل: فلتر مبدئي + سقف + أرضية', 'Triple-stage filtration: primary filter + ceiling filter + floor filter'),
+      t('لوحة تحكم متكاملة مع مفتاح طوارئ', 'Integrated control panel with emergency stop')
+    ],
+    badge: t('الأفضل قيمة ', 'Best Value'),
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن فرن الرش EAE 8015',
+      "Hello, I'd like to inquire about Economic Spray Booth EAE-8015"
+    ),
+  },
+
+  {
     id: 'car-lift-2post-closed',
     category: 'car-lift',
     categoryLabel: t('رافعات السيارات', 'Car Lifts'),
@@ -274,6 +392,56 @@ export const products: Product[] = [
   },
 
   {
+    id: 'car-lift-4post',
+    category: 'car-lift',
+    categoryLabel: t('رافعات السيارات', 'Car Lifts'),
+    name: t('رافعة 4 عمود', '4 Post Car Lift'),
+    model: 'LD-440/440A | LD-450/45DA',
+    description: t(
+      'رافعة سيارات 4 عمود LD-440 هي رافعة هيدروليكية احترافية مصممة لرفع المركبات حتى 4000 كجم بثبات واحترافية عالية. تتميز بأسطوانة هيدروليكية محمية داخل المنصة الثابتة، وكابلات رفع مجلفنة عالية المقاومة مع نظام ربيع أوتوماتيكي لضمان الأمان الكامل عند انقطاع الكابل أثناء الرفع. مثالية لورش الصيانة والمعارض التي تحتاج إلى رفع مستقر وآمن.',
+      'The LD-440 4-post car lift is a professional hydraulic lift designed to raise vehicles up to 4000 kg with high stability. Features a hydraulic cylinder located in the fixed platform for perfect protection, high resistance galvanized pre-stretched lifting cables, and automatic spring loaded safety in case of cable breakage ensuring complete stability during parking. Ideal for maintenance workshops and showrooms requiring stable and safe vehicle lifting.'
+    ),
+    image: car45,
+    images: [car46,car41, car42, car43, car44],
+    specs: [
+      { label: t('طاقة الرفع الرئيسية', 'Lifting Capacity (Main)'), value: '4000 kg' },
+      { label: t('طاقة رفع الرافعة المقصية', 'Lifting Capacity (Jack)'), value: '2000 kg' },
+      { label: t('ارتفاع الرفع الرئيسي', 'Lifting Height (Main)'), value: '1650 mm' },
+      { label: t('ارتفاع الرفع المقصية', 'Lifting Height (Jack)'), value: '510 mm' },
+      { label: t('الارتفاع الأولي للمنصة', 'Initial Height of Platform'), value: '190 mm' },
+      { label: t('الحد الأدنى للارتفاع (رئيسي)', 'Min. Height (Main)'), value: '225 mm' },
+      { label: t('الحد الأدنى للارتفاع (مقصية)', 'Min. Height (Jack)'), value: '190 mm' },
+      { label: t('طول المنصة', 'Platform Length'), value: '4380 mm (4200/4600mm)' },
+      { label: t('عرض المنصة', 'Platform Width'), value: '500 mm' },
+      { label: t('طاقة العارضة', 'Jacking Beam Capacity'), value: '2000 kg' },
+      { label: t('ارتفاع العارضة', 'Jacking Beam Rise'), value: '65-450 mm' },
+      { label: t('طول العارضة', 'Jacking Beam Length'), value: '920-1320 mm' },
+      { label: t('عرض العارضة', 'Jacking Beam Width'), value: '230 mm' },
+      { label: t('الطول الكلي للماكينة', 'Total Length of Machine'), value: '5360 mm' },
+      { label: t('عرض الماكينة', 'Machine Width'), value: '3631 mm' },
+      { label: t('ارتفاع الماكينة', 'Machine Height'), value: '2140 mm' },
+      { label: t('وزن الماكينة', 'Machine Weight'), value: '1278 kg' },
+      { label: t('قدرة المحرك', 'Motor Power'), value: '2.2 kw' },
+      { label: t('المحرك والطاقة', 'Power & Motor'), value: '1Ph 2.5HP 220V / 3Ph 2HP 220V/380V, 50/60Hz' },
+    ],
+    features: [
+      t('أسطوانة هيدروليكية محمية داخل المنصة الثابتة', 'Hydraulic cylinder located in fixed platform, perfectly protected'),
+      t('كابلات رفع مجلفنة عالية المقاومة ومسبقة الشد', 'High resistance galvanized and pre-stretched lifting cable'),
+      t('قضبان راتشيت قابلة للتعديل لضمان أفقية المنصات', 'Adjustable parking ratchet rails ensure platforms and cross members stay horizontal'),
+      t('ربيع أوتوماتيكي عند انقطاع الكابل لضمان الاستقرار', 'Automatic spring loaded in event of cable breakage for complete stability'),
+      t('تحمل انحراف عجلات الضبط', 'Wheel alignment tolerances'),
+      t('تحكم عن بعد كهربائي', 'Electric remote-controller'),
+      t('بكرات كبيرة القطر للأداء الأمثل', 'Self large diameter pulleys'),
+      t('رافعة مقصية هيدروليكية ثنائية المستوى 2 طن (اختياري)', 'Hydraulic two-level 2 ton scissor jack (OPTION)'),
+      t('منصات محاذاة قابلة للفصل (اختياري)', 'Detachable align platforms (OPTION)'),
+    ],
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن رافعة 4 عمود LD-440',
+      "Hello, I'd like to inquire about the 4-post car lift LD-440"
+    ),
+  },
+
+  {
     id: 'car-lift-scissor-ground',
     category: 'car-lift',
     categoryLabel: t('رافعات السيارات', 'Car Lifts'),
@@ -326,41 +494,6 @@ export const products: Product[] = [
   },
 
   {
-    id: 'spray-booth-economic',
-    category: 'spray-booth',
-    categoryLabel: t('أفران الدهان  ', 'Spray Booths '),
-    name: t('فرن الدهان EAE 8015', 'EAE 8015 Spray Booth'),
-    model: 'EAE-8015  E-Type',
-    description: t(
-      'تعد كابينة دهان سيارات EAE-8015 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا.',
-      'The EAE-8015 spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems.'
-    ),
-    image: sprayEcono2,
-    images: [sprayEcono2],
-    specs: [
-      { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5000 × 3300 mm' },
-      { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 3900 × 2650 mm' },
-      { label: t('سمك الألواح', 'Panel Thickness'), value: '42.5mm EPS' },
-      { label: t('قدرة المراوح', 'Fan Power'), value: '12KW' },
-      { label: t('مجموعات الإضاءة', 'Lighting Groups'), value: '8 LED' },
-      { label: t('نظام الفلترة', 'Filtration System'), value: 'Triple-stage / ثلاثي المراحل' },
-      { label: t('بلد المنشأ', 'Origin'), value: 'China / الصين' }
-    ],
-    features: [
-      t('ألواح حوائط من الفوم الأبيض EPS بسمك 42.5 مم بنظام التعشيق', 'EPS foam wall panels 42.5mm thick with interlocking system'),
-      t('8 مجموعات إضاءة LED موزعة بزاوية 45 درجة', '8 LED lighting groups distributed at 45-degree angles'),
-      t('3 مراوح بقدرة 4 كيلو وات لكل واحدة بإجمالي 12 كيلو وات', '3 fans at 4KW each, total 12KW for stable airflow'),
-      t('نظام فلترة ثلاثي المراحل: فلتر مبدئي + سقف + أرضية', 'Triple-stage filtration: primary filter + ceiling filter + floor filter'),
-      t('لوحة تحكم متكاملة مع مفتاح طوارئ', 'Integrated control panel with emergency stop')
-    ],
-    badge: t('الأفضل قيمة ', 'Best Value'),
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن فرن الرش EAE 8015',
-      "Hello, I'd like to inquire about Economic Spray Booth EAE-8015"
-    ),
-  },
-
-  {
     id: 'car-lift-scissor-balance',
     category: 'car-lift',
     categoryLabel: t('رافعات السيارات', 'Car Lifts'),
@@ -401,139 +534,6 @@ export const products: Product[] = [
     whatsappText: t(
       'مرحباً، أود الاستفسار عن رافعة المقص المزدوج بميزان BLC-350',
       "Hello, I'd like to inquire about the Double Scissor Alignment Lift BLC-350"
-    ),
-  },
-
-  {
-    id: 'car-lift-4post',
-    category: 'car-lift',
-    categoryLabel: t('رافعات السيارات', 'Car Lifts'),
-    name: t('رافعة 4 عمود', '4 Post Car Lift'),
-    model: 'LD-440/440A | LD-450/45DA',
-    description: t(
-      'رافعة سيارات 4 عمود LD-440 هي رافعة هيدروليكية احترافية مصممة لرفع المركبات حتى 4000 كجم بثبات واحترافية عالية. تتميز بأسطوانة هيدروليكية محمية داخل المنصة الثابتة، وكابلات رفع مجلفنة عالية المقاومة مع نظام ربيع أوتوماتيكي لضمان الأمان الكامل عند انقطاع الكابل أثناء الرفع. مثالية لورش الصيانة والمعارض التي تحتاج إلى رفع مستقر وآمن.',
-      'The LD-440 4-post car lift is a professional hydraulic lift designed to raise vehicles up to 4000 kg with high stability. Features a hydraulic cylinder located in the fixed platform for perfect protection, high resistance galvanized pre-stretched lifting cables, and automatic spring loaded safety in case of cable breakage ensuring complete stability during parking. Ideal for maintenance workshops and showrooms requiring stable and safe vehicle lifting.'
-    ),
-    image: car45,
-    images: [car46,car41, car42, car43, car44],
-    specs: [
-      { label: t('طاقة الرفع الرئيسية', 'Lifting Capacity (Main)'), value: '4000 kg' },
-      { label: t('طاقة رفع الرافعة المقصية', 'Lifting Capacity (Jack)'), value: '2000 kg' },
-      { label: t('ارتفاع الرفع الرئيسي', 'Lifting Height (Main)'), value: '1650 mm' },
-      { label: t('ارتفاع الرفع المقصية', 'Lifting Height (Jack)'), value: '510 mm' },
-      { label: t('الارتفاع الأولي للمنصة', 'Initial Height of Platform'), value: '190 mm' },
-      { label: t('الحد الأدنى للارتفاع (رئيسي)', 'Min. Height (Main)'), value: '225 mm' },
-      { label: t('الحد الأدنى للارتفاع (مقصية)', 'Min. Height (Jack)'), value: '190 mm' },
-      { label: t('طول المنصة', 'Platform Length'), value: '4380 mm (4200/4600mm)' },
-      { label: t('عرض المنصة', 'Platform Width'), value: '500 mm' },
-      { label: t('طاقة العارضة', 'Jacking Beam Capacity'), value: '2000 kg' },
-      { label: t('ارتفاع العارضة', 'Jacking Beam Rise'), value: '65-450 mm' },
-      { label: t('طول العارضة', 'Jacking Beam Length'), value: '920-1320 mm' },
-      { label: t('عرض العارضة', 'Jacking Beam Width'), value: '230 mm' },
-      { label: t('الطول الكلي للماكينة', 'Total Length of Machine'), value: '5360 mm' },
-      { label: t('عرض الماكينة', 'Machine Width'), value: '3631 mm' },
-      { label: t('ارتفاع الماكينة', 'Machine Height'), value: '2140 mm' },
-      { label: t('وزن الماكينة', 'Machine Weight'), value: '1278 kg' },
-      { label: t('قدرة المحرك', 'Motor Power'), value: '2.2 kw' },
-      { label: t('المحرك والطاقة', 'Power & Motor'), value: '1Ph 2.5HP 220V / 3Ph 2HP 220V/380V, 50/60Hz' },
-    ],
-    features: [
-      t('أسطوانة هيدروليكية محمية داخل المنصة الثابتة', 'Hydraulic cylinder located in fixed platform, perfectly protected'),
-      t('كابلات رفع مجلفنة عالية المقاومة ومسبقة الشد', 'High resistance galvanized and pre-stretched lifting cable'),
-      t('قضبان راتشيت قابلة للتعديل لضمان أفقية المنصات', 'Adjustable parking ratchet rails ensure platforms and cross members stay horizontal'),
-      t('ربيع أوتوماتيكي عند انقطاع الكابل لضمان الاستقرار', 'Automatic spring loaded in event of cable breakage for complete stability'),
-      t('تحمل انحراف عجلات الضبط', 'Wheel alignment tolerances'),
-      t('تحكم عن بعد كهربائي', 'Electric remote-controller'),
-      t('بكرات كبيرة القطر للأداء الأمثل', 'Self large diameter pulleys'),
-      t('رافعة مقصية هيدروليكية ثنائية المستوى 2 طن (اختياري)', 'Hydraulic two-level 2 ton scissor jack (OPTION)'),
-      t('منصات محاذاة قابلة للفصل (اختياري)', 'Detachable align platforms (OPTION)'),
-    ],
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن رافعة 4 عمود LD-440',
-      "Hello, I'd like to inquire about the 4-post car lift LD-440"
-    ),
-  },
-
-  {
-    id: 'filters-spray-booth',
-    category: 'spray-booth',
-    categoryLabel: t('أفران الدهان', 'Spray Booths'),
-    name: t('فلتر فرن الدهان', 'Filters Spray Booth'),
-    model: 'EAE-FILTER',
-    description: t(
-      'تُعدّ فلاتر أفران الدهان مواد أساسية تُستخدم لالتقاط ومعالجة رذاذ الطلاء الناتج عن عملية الرش، وتتمثل وظيفتها الرئيسية في إزالة جزيئات رذاذ الطلاء من الهواء عن طريق الاعتراض الفيزيائي، وذلك لحماية البيئة والمعدات. تتكون فلاتر كابينة رش السيارات عادةً من ألياف زجاجية أحادية الشعيرة متصلة عالية المتانة، والتي يمكنها تخزين غبار رذاذ الطلاء بكفاءة. مادة الترشيح مصنوعة من القطن الأخضر والأبيض، والجانب الأخضر هو الجانب المواجه للهواء، ويتميز بمرونته وانخفاض فقدان الضغط.',
-      'Spray booth filters are essential materials used to capture and treat paint spray mist generated during the spraying process. Their primary function is to remove paint spray particles from the air through physical interception, protecting both the environment and equipment. Spray booth filters are typically made of high-durability single-filament glass fibers capable of efficiently storing paint spray dust. The filter media is made of green and white cotton — the green side faces the airflow, offering flexibility and low pressure drop.'
-    ),
-    image: filter1,
-    images: [filter1, filter2],
-    specs: [
-      { label: t('المادة', 'Material'), value: 'Glass Fiber / ألياف زجاجية' },
-      { label: t('مادة الترشيح', 'Filter Media'), value: 'Green & White Cotton / قطن أخضر وأبيض' },
-      { label: t('الوظيفة', 'Function'), value: 'Paint Mist Filtration / ترشيح رذاذ الطلاء' },
-    ],
-    features: [
-      t('ألياف زجاجية أحادية الشعيرة عالية المتانة', 'High-durability single-filament glass fibers'),
-      t('تخزين فعال لغبار رذاذ الطلاء', 'Efficient paint spray dust storage'),
-      t('مادة ترشيح من القطن الأخضر والأبيض', 'Green and white cotton filter media'),
-      t('الجانب الأخضر مواجه للهواء بمرونة عالية', 'Green side faces airflow with high flexibility'),
-      t('انخفاض فقدان الضغط أثناء التشغيل', 'Low pressure drop during operation'),
-      t('حماية البيئة والمعدات من جزيئات الطلاء', 'Protects environment and equipment from paint particles'),
-    ],
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن فلاتر أفران الدهان EAE-FILTER',
-      "Hello, I'd like to inquire about Spray Booth Filters EAE-FILTER"
-    ),
-  },
-
-  {
-    id: 'medium-spray-booth',
-    category: 'spray-booth',
-    categoryLabel: t('أفران الدهان', 'Spray Booths'),
-    name: t('فرن الدهان EAE-8014', 'Medium Spray Booth'),
-    model: 'EAE-8014 (M Type)',
-    description: t(
-      'تعد كابينة دهان سيارات EAE-8014 الخيار الأمثل للورش والمحترفين الباحثين عن أعلى مستويات الدقة والجودة والسلامة أثناء عملية الدهان. فهي تجمع بين التصميم الهندسي المتطور وأنظمة التهوية والفلترة المتقدمة لتوفير بيئة عمل نظيفة تمامًا، تضمن خروج السيارة بعد الدهان بأعلى جودة وفق أقصى معايير السلامة المهنية.',
-      'The EAE-8014 car spray booth is the ideal choice for workshops and professionals seeking the highest levels of precision, quality, and safety during the painting process. It combines advanced engineering design with sophisticated ventilation and filtration systems to provide a completely clean working environment, ensuring the vehicle exits with the highest quality finish according to the strictest professional safety standards.'
-    ),
-    image: EAEMed,
-    images: [EAEMed],
-    specs: [
-      { label: t('الأبعاد الخارجية', 'External Dimensions'), value: '7000 × 5000 × 3300 mm' },
-      { label: t('الأبعاد الداخلية', 'Internal Dimensions'), value: '6900 × 3900 × 2650 mm' },
-      { label: t('إجمالي القدرة الكهربائية', 'Total Power'), value: '18 kW' },
-      { label: t('الفولتية', 'Voltage'), value: '380V / 50Hz / 3Ph' },
-      { label: t('الوزن', 'Weight'), value: '≈ 3000 kg' },
-      { label: t('ألواح الحوائط', 'Wall Panels'), value: '50mm Rock Wool / صوف صخري مزدوج العزل' },
-      { label: t('الباب الرئيسي', 'Main Door'), value: '4 Panels Aluminum — 3000 × 2600 mm' },
-      { label: t('مروحة الدخول', 'Inlet Fan'), value: '2 × 7.5kW Centrifugal (20,000 m³/h)' },
-      { label: t('مروحة الخروج', 'Outlet Fan'), value: '1 × 7.5kW Centrifugal (34,375 m³/h)' },
-      { label: t('الإضاءة السقفية', 'Ceiling Lights'), value: '8 × 4 LED (32 lamps @ 45°)' },
-      { label: t('الإضاءة الجانبية', 'Side Lights'), value: '8 LED Units' },
-      { label: t('الموقد (اختياري)', 'Burner (Optional)'), value: 'RIELLO GS — 140,000 Kcal/h' },
-      { label: t('أقصى حرارة', 'Max Temperature'), value: '80°C' },
-      { label: t('استهلاك الوقود', 'Fuel Consumption'), value: '8–9 L/h (Diesel)' },
-      { label: t('اللون', 'Color'), value: 'Gray & Black / رمادي وأسود' },
-      { label: t('بلد المنشأ', 'Origin'), value: 'China / الصين' },
-    ],
-    features: [
-      t('ألواح صوف صخري 50 مم مزدوجة العزل مقاومة للحريق بنظام التعشيق', '50mm double-insulated rock wool panels, flame-retardant with interlocking system'),
-      t('أرضية بارتفاع 300 مم مع شبكات صلب مسطحة و5 صفوف شبكات أرضية', '300mm platform with flat steel grids and 5 rows of floor gratings'),
-      t('باب رئيسي 4 ألواح ألومنيوم مع زجاج مقاوم للحرارة 8 مم', '4-panel aluminum main door with 8mm heat-resistant glass'),
-      t('باب طوارئ جانبي 900×2000 مم مع مانع انفجار', '900×2000mm emergency side door with explosion preventer'),
-      t('مروحتان طاردتان مركزيتان بقدرة 15 كيلو وات (20,000 م³/ساعة)', '2 centrifugal inlet fans at 15kW total (20,000 m³/h)'),
-      t('مروحة عادم 7.5 كيلو وات بسعة 34,375 م³/ساعة', '7.5kW exhaust fan with 34,375 m³/h capacity'),
-      t('كابينة هواء من الصوف الصخري مع مجاري صلب مجلفن', 'Rock wool air cabinet with galvanized steel ducting'),
-      t('موقد ديزل إيطالي RIELLO GS اختياري بقدرة 140,000 Kcal/h', 'Optional Italian RIELLO GS diesel burner at 140,000 Kcal/h'),
-      t('تسخين سريع 5-8 دقائق حتى 60°C مع أقصى حرارة 80°C', 'Fast heating 5-8 min to 60°C, max 80°C'),
-      t('سقف من أنابيب صلب مجلفنة مع تجويف مطلي بالمسحوق', 'Galvanized steel tube roof beams with powder-coated plenum'),
-      t('32 لمبة LED سقفية بزاوية 45° + 8 وحدات إضاءة جانبية', '32 ceiling LED lamps at 45° angle + 8 side lighting units'),
-      t('فلترة ثلاثية المراحل: مبدئي (>90%) + سقف (>98%) + أرضية (>90%)', 'Triple-stage filtration: primary (>90%) + ceiling (>98%) + floor (>90%)'),
-      t('نظام تحكم ذكي مع ضبط حرارة ووقت ومفتاح طوارئ', 'Intelligent control system with temp/time setting & emergency stop'),
-      t('هيكل رباعي مطلي بالمسحوق مع سحب هواء من الجانب العلوي', 'Powder-coated quad-frame structure with top-side air intake'),
-    ],
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن كابينة الدهان EAE-8014ة EAE-8014',
-      "Hello, I'd like to inquire about the Medium Spray Booth EAE-8014"
     ),
   },
 
@@ -635,260 +635,6 @@ export const products: Product[] = [
     whatsappText: t(
       'السلام عليكم، أود الاستفسار عن صندوق العدة المتنقل UNAITE',
       'Hello, I would like to inquire about the UNAITE Mobile Tool Box'
-    ),
-  },
-
-  {
-    id: 'compressor-lgfd-15b',
-    category: 'compressor',
-    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
-    name: t('كمبروسر هواء سكرو LGFD-15B', 'LGFD-15B Screw Air Compressor'),
-    model: 'LGFD-15B',
-    description: t(
-      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بطرف ضاغط Rotorcomp الألماني، يوفر كفاءة عالية وضوضاء منخفضة مع ضمان 12 شهراً.',
-      'EVO oil-injected screw air compressor with German Rotorcomp air end. High efficiency, low noise, 12-month warranty.'
-    ),
-    image: compShared1,
-    images: [compShared1, compShared2,  comp15, comp15_2, comp15_3, comp15_4, comp15_5, comp15_6, comp15_7, comp15_8, comp15_9, comp15_10, ...compressorSharedImages],
-    specs: [
-      { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '15' },
-      { label: t('الضغط', 'Pressure'), value: '10 bar' },
-      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
-      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
-      { label: t('سعة الهواء', 'Air Capacity'), value: '1.58 m³/min' },
-      { label: t('وزن الكمبروسر', 'N/W Comp'), value: '400 KG' },
-      { label: t('الأبعاد (مم)', 'Dimensions (mm)'), value: '900 × 800 × 1200' },
-      { label: t('رقم الموديل', 'Model'), value: 'YX3-160L-2' },
-      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
-      { label: t('قوة مروحة التبريد (واط)', 'Cooling Fan Power (W)'), value: '180' },
-      { label: t('تدفق هواء التبريد (م³/س)', 'Cooling Air Flow (m³/h)'), value: '3000' },
-      { label: t('وزن المحرك', 'N/W Motor'), value: '120 KG' },
-      { label: t('سرعة المحرك (RPM)', 'Speed / Motor (RPM)'), value: '3520' },
-      { label: t('حجم الخزان (م³)', 'Adapter Volume (m³)'), value: '≥0.3' },
-    ],
-    features: [],
-    accessories: [
-      t('فلتر الهواء', 'Air Filter'),
-      t('فلتر الزيت', 'Oil Filter'),
-      t('فاصل الزيت', 'Oil Separator'),
-      t('زيت الكمبروسر', 'Compressor Oil'),
-      t('سير عزم المحرك', 'Drive Belt'),
-      t('شاشة التحكم', 'Control Panel'),
-    ],
-    whyChooseUs: t(
-      'تقنية ROLLING RPROFILE الجديدة لكفاءة عالية جداً وتقليل الضوضاء — طرف ضاغط Rotorcomp "صنع في ألمانيا" — نظام تحكم ذكي بشاشة لمس — مكونات كهربائية Schneider — محرك موفر للطاقة IE3 بكفاءة أعلى 15% — ناقل حركة OPTI بعمر افتراضي 25,000 ساعة — ضمان 12 شهراً على الجهاز وطرف الضاغط.',
-      'New ROLLING RPROFILE technology for maximum efficiency and low noise — German Rotorcomp air end — Smart touch-screen controller — Schneider electrical components — IE3 energy-saving motor (+15% efficiency) — OPTI belt drive with 25,000-hour lifespan — 12-month warranty on unit and air end.'
-    ),
-    afterSales: t(
-      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة تشمل إعادة ضبط النظام وفحص جميع المكونات.',
-      'We provide original spare parts and comprehensive periodic maintenance including system recalibration and full component inspection.'
-    ),
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-15B',
-      "Hello, I'd like to inquire about the LGFD-15B Screw Air Compressor"
-    ),
-  },
-
-  {
-    id: 'compressor-lgfd-22b',
-    category: 'compressor',
-    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
-    name: t('كمبروسر هواء سكرو LGFD-22B', 'LGFD-22B Screw Air Compressor'),
-    model: 'LGFD-22B',
-    description: t(
-      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بطرف ضاغط Rotorcomp الألماني، قوة 22 كيلوواط مناسب للورش EAE-8014ة والكبيرة.',
-      'EVO oil-injected screw air compressor with German Rotorcomp air end, 22 kW — ideal for medium and large workshops.'
-    ),
-    image: compShared1,
-    images: [compShared1, compShared2,  comp22, comp22_2, comp22_3, ...compressorSharedImages],
-    specs: [
-      { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '22' },
-      { label: t('الضغط', 'Pressure'), value: '10 bar' },
-      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
-      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
-      { label: t('سعة الهواء', 'Air Capacity'), value: '3.2 m³/min' },
-      { label: t('وزن الكمبروسر', 'N/W Comp'), value: '500 KG' },
-      { label: t('الأبعاد (مم)', 'Dimensions (mm)'), value: '1100 × 850 × 1296' },
-      { label: t('رقم الموديل', 'Model'), value: 'YX3-160L-2' },
-      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
-      { label: t('قوة مروحة التبريد (واط)', 'Cooling Fan Power (W)'), value: '750' },
-      { label: t('تدفق هواء التبريد (م³/س)', 'Cooling Air Flow (m³/h)'), value: '9500' },
-      { label: t('وزن المحرك', 'N/W Motor'), value: '138 KG' },
-      { label: t('سرعة المحرك (RPM)', 'Speed / Motor (RPM)'), value: '3530' },
-      { label: t('حجم الخزان (م³)', 'Adapter Volume (m³)'), value: '≥0.5' },
-    ],
-    features: [],
-    accessories: [
-      t('فلتر الهواء', 'Air Filter'),
-      t('فلتر الزيت', 'Oil Filter'),
-      t('فاصل الزيت', 'Oil Separator'),
-      t('زيت الكمبروسر', 'Compressor Oil'),
-      t('سير عزم المحرك', 'Drive Belt'),
-      t('شاشة التحكم', 'Control Panel'),
-    ],
-    whyChooseUs: t(
-      'تقنية ROLLING RPROFILE الجديدة لكفاءة عالية جداً وتقليل الضوضاء — طرف ضاغط Rotorcomp "صنع في ألمانيا" — نظام تحكم ذكي بشاشة لمس — مكونات كهربائية Schneider — محرك موفر للطاقة IE3 بكفاءة أعلى 15% — ناقل حركة OPTI بعمر افتراضي 25,000 ساعة — ضمان 12 شهراً على الجهاز وطرف الضاغط.',
-      'New ROLLING RPROFILE technology for maximum efficiency and low noise — German Rotorcomp air end — Smart touch-screen controller — Schneider electrical components — IE3 energy-saving motor (+15% efficiency) — OPTI belt drive with 25,000-hour lifespan — 12-month warranty on unit and air end.'
-    ),
-    afterSales: t(
-      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة تشمل إعادة ضبط النظام وفحص جميع المكونات.',
-      'We provide original spare parts and comprehensive periodic maintenance including system recalibration and full component inspection.'
-    ),
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-22B',
-      "Hello, I'd like to inquire about the LGFD-22B Screw Air Compressor"
-    ),
-  },
-
-  {
-    id: 'compressor-lgfd-30b',
-    category: 'compressor',
-    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
-    name: t('كمبروسر هواء سكرو LGFD-30B', 'LGFD-30B Screw Air Compressor'),
-    model: 'LGFD-30B',
-    description: t(
-      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بقوة 30 كيلوواط وسعة هواء 4.32 م³/د، مثالي للمنشآت الصناعية EAE-8014ة.',
-      'EVO oil-injected screw air compressor, 30 kW with 4.32 m³/min air capacity — ideal for mid-size industrial facilities.'
-    ),
-    image: compShared1,
-    images: [compShared1, compShared2,  ...compressorSharedImages],
-    specs: [
-      { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '30' },
-      { label: t('الضغط', 'Pressure'), value: '10 bar' },
-      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
-      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
-      { label: t('سعة الهواء', 'Air Capacity'), value: '4.32 m³/min' },
-      { label: t('وزن الكمبروسر', 'N/W Comp'), value: '450 KG' },
-      { label: t('الأبعاد (مم)', 'Dimensions (mm)'), value: '1200 × 900 × 1300' },
-      { label: t('رقم الموديل', 'Model'), value: 'YX3-160L-2' },
-      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
-      { label: t('قوة مروحة التبريد (واط)', 'Cooling Fan Power (W)'), value: '750' },
-      { label: t('تدفق هواء التبريد (م³/س)', 'Cooling Air Flow (m³/h)'), value: '950' },
-      { label: t('وزن المحرك', 'N/W Motor'), value: '240 KG' },
-      { label: t('سرعة المحرك (RPM)', 'Speed / Motor (RPM)'), value: '3535' },
-    ],
-    features: [],
-    accessories: [
-      t('فلتر الهواء', 'Air Filter'),
-      t('فلتر الزيت', 'Oil Filter'),
-      t('فاصل الزيت', 'Oil Separator'),
-      t('زيت الكمبروسر', 'Compressor Oil'),
-      t('سير عزم المحرك', 'Drive Belt'),
-      t('شاشة التحكم', 'Control Panel'),
-    ],
-    whyChooseUs: t(
-      'تقنية ROLLING RPROFILE الجديدة لكفاءة عالية جداً وتقليل الضوضاء — طرف ضاغط Rotorcomp "صنع في ألمانيا" — نظام تحكم ذكي بشاشة لمس — مكونات كهربائية Schneider — محرك موفر للطاقة IE3 بكفاءة أعلى 15% — ناقل حركة OPTI بعمر افتراضي 25,000 ساعة — ضمان 12 شهراً على الجهاز وطرف الضاغط.',
-      'New ROLLING RPROFILE technology for maximum efficiency and low noise — German Rotorcomp air end — Smart touch-screen controller — Schneider electrical components — IE3 energy-saving motor (+15% efficiency) — OPTI belt drive with 25,000-hour lifespan — 12-month warranty on unit and air end.'
-    ),
-    afterSales: t(
-      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة تشمل إعادة ضبط النظام وفحص جميع المكونات.',
-      'We provide original spare parts and comprehensive periodic maintenance including system recalibration and full component inspection.'
-    ),
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-30B',
-      "Hello, I'd like to inquire about the LGFD-30B Screw Air Compressor"
-    ),
-  },
-
-  {
-    id: 'compressor-lgfd-37b',
-    category: 'compressor',
-    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
-    name: t('كمبروسر هواء سكرو LGFD-37B', 'LGFD-37B Screw Air Compressor'),
-    model: 'LGFD-37B',
-    description: t(
-      'ضاغط هواء حلزوني محقون بالزيت فئة EVO الأقوى في السلسلة بقوة 37 كيلوواط وسعة هواء 5.8 م³/د، للمنشآت الصناعية الكبيرة.',
-      'The most powerful EVO oil-injected screw compressor in the series — 37 kW, 5.8 m³/min — built for large industrial facilities.'
-    ),
-    image: compShared1,
-    images: [compShared1, compShared2,  comp37, ...compressorSharedImages],
-    specs: [
-      { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '37' },
-      { label: t('الضغط', 'Pressure'), value: '10 bar' },
-      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
-      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
-      { label: t('سعة الهواء', 'Air Capacity'), value: '5.8 m³/min' },
-      { label: t('وزن الكمبروسر', 'N/W Comp'), value: '700 KG' },
-      { label: t('الأبعاد (مم)', 'Dimensions (mm)'), value: '1300 × 1000 × 1296' },
-      { label: t('رقم الموديل', 'Model'), value: 'YX3-160L-2' },
-      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
-      { label: t('قوة مروحة التبريد (واط)', 'Cooling Fan Power (W)'), value: '1100' },
-      { label: t('تدفق هواء التبريد (م³/س)', 'Cooling Air Flow (m³/h)'), value: '16000' },
-      { label: t('وزن المحرك', 'N/W Motor'), value: '251 KG' },
-      { label: t('سرعة المحرك (RPM)', 'Speed / Motor (RPM)'), value: '3540' },
-      { label: t('حجم الخزان (م³)', 'Adapter Volume (m³)'), value: '≥0.6' },
-    ],
-    features: [],
-    accessories: [
-      t('فلتر الهواء', 'Air Filter'),
-      t('فلتر الزيت', 'Oil Filter'),
-      t('فاصل الزيت', 'Oil Separator'),
-      t('زيت الكمبروسر', 'Compressor Oil'),
-      t('سير عزم المحرك', 'Drive Belt'),
-      t('شاشة التحكم', 'Control Panel'),
-    ],
-    whyChooseUs: t(
-      'تقنية ROLLING RPROFILE الجديدة لكفاءة عالية جداً وتقليل الضوضاء — طرف ضاغط Rotorcomp "صنع في ألمانيا" — نظام تحكم ذكي بشاشة لمس — مكونات كهربائية Schneider — محرك موفر للطاقة IE3 بكفاءة أعلى 15% — ناقل حركة OPTI بعمر افتراضي 25,000 ساعة — ضمان 12 شهراً على الجهاز وطرف الضاغط.',
-      'New ROLLING RPROFILE technology for maximum efficiency and low noise — German Rotorcomp air end — Smart touch-screen controller — Schneider electrical components — IE3 energy-saving motor (+15% efficiency) — OPTI belt drive with 25,000-hour lifespan — 12-month warranty on unit and air end.'
-    ),
-    afterSales: t(
-      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة تشمل إعادة ضبط النظام وفحص جميع المكونات.',
-      'We provide original spare parts and comprehensive periodic maintenance including system recalibration and full component inspection.'
-    ),
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-37B',
-      "Hello, I'd like to inquire about the LGFD-37B Screw Air Compressor"
-    ),
-  },
-
-  {
-    id: 'compressor-integrated',
-    category: 'compressor',
-    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
-    name: t('الكمبروسر المتكامل', 'Integrated Air Compressor'),
-    model: 'LGFD-15B Integrated',
-    description: t(
-      'كمبروسر هواء متكامل بقوة 15 كيلوواط (20 حصان) مزود بمجفف هواء مدمج وخزان سعة 500 لتر — حل شامل ومتكامل في وحدة واحدة مثالي للورش الاحترافية.',
-      'Integrated air compressor 15 kW (20 HP) with built-in air dryer and 500-liter tank — a complete all-in-one solution ideal for professional workshops.'
-    ),
-    image: integratedMain,
-    images: [ compShared2, comp15Extra1, comp15Extra2, ...compressorSharedImages],
-    specs: [
-      { label: t('قوة المحرك', 'Motor Power'), value: '15 kW / 20 HP' },
-      { label: t('الضغط', 'Pressure'), value: '10 bar' },
-      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
-      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
-      { label: t('سعة الخزان', 'Tank Capacity'), value: '500 لتر / 500 L' },
-      { label: t('المجفف', 'Air Dryer'), value: 'مدمج / Built-in' },
-      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
-    ],
-    features: [
-      t('قوة 15 كيلوواط (20 حصان)', '15 kW (20 HP) power'),
-      t('مجفف هواء مدمج لضمان هواء جاف ونظيف', 'Built-in air dryer for clean dry air'),
-      t('خزان سعة 500 لتر لضغط هواء مستمر وثابت', '500-liter tank for continuous stable pressure'),
-      t('طرف ضاغط Rotorcomp الألماني لكفاءة عالية', 'German Rotorcomp air end for maximum efficiency'),
-      t('تصميم متكامل في وحدة واحدة سهل التركيب', 'All-in-one integrated design, easy to install'),
-      t('ضوضاء منخفضة مع أداء عالٍ', 'Low noise with high performance'),
-      t('ضمان 12 شهراً على الجهاز كاملاً', '12-month full warranty'),
-    ],
-    whyChooseUs: t(
-      'يجمع الكمبروسر المتكامل بين الضاغط الحلزوني والمجفف والخزان في وحدة واحدة، مما يوفر عليك تكلفة وجهد التركيب المنفصل ويضمن هواء نظيف وجاف على مدار الساعة.',
-      'The integrated compressor combines the screw compressor, dryer, and tank in one unit — saving installation cost and effort while guaranteeing clean dry air around the clock.'
-    ),
-    afterSales: t(
-      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة.',
-      'We provide original spare parts and comprehensive periodic maintenance.'
-    ),
-    accessories: [
-      t('فلتر الهواء', 'Air Filter'),
-      t('فلتر الزيت', 'Oil Filter'),
-      t('فاصل الزيت', 'Oil Separator'),
-      t('زيت الكمبروسر', 'Compressor Oil'),
-      t('شاشة التحكم', 'Control Panel'),
-    ],
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن الكمبروسر المتكامل 15 كيلوواط',
-      "Hello, I'd like to inquire about the Integrated Air Compressor 15 kW"
     ),
   },
 
@@ -1418,6 +1164,259 @@ export const products: Product[] = [
     ),
   },
 
+  {
+    id: 'compressor-lgfd-15b',
+    category: 'compressor',
+    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
+    name: t('كمبروسر هواء سكرو LGFD-15B', 'LGFD-15B Screw Air Compressor'),
+    model: 'LGFD-15B',
+    description: t(
+      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بطرف ضاغط Rotorcomp الألماني، يوفر كفاءة عالية وضوضاء منخفضة مع ضمان 12 شهراً.',
+      'EVO oil-injected screw air compressor with German Rotorcomp air end. High efficiency, low noise, 12-month warranty.'
+    ),
+    image: compShared1,
+    images: [compShared1, compShared2,  comp15, comp15_2, comp15_3, comp15_4, comp15_5, comp15_6, comp15_7, comp15_8, comp15_9, comp15_10, ...compressorSharedImages],
+    specs: [
+      { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '15' },
+      { label: t('الضغط', 'Pressure'), value: '10 bar' },
+      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
+      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
+      { label: t('سعة الهواء', 'Air Capacity'), value: '1.58 m³/min' },
+      { label: t('وزن الكمبروسر', 'N/W Comp'), value: '400 KG' },
+      { label: t('الأبعاد (مم)', 'Dimensions (mm)'), value: '900 × 800 × 1200' },
+      { label: t('رقم الموديل', 'Model'), value: 'YX3-160L-2' },
+      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
+      { label: t('قوة مروحة التبريد (واط)', 'Cooling Fan Power (W)'), value: '180' },
+      { label: t('تدفق هواء التبريد (م³/س)', 'Cooling Air Flow (m³/h)'), value: '3000' },
+      { label: t('وزن المحرك', 'N/W Motor'), value: '120 KG' },
+      { label: t('سرعة المحرك (RPM)', 'Speed / Motor (RPM)'), value: '3520' },
+      { label: t('حجم الخزان (م³)', 'Adapter Volume (m³)'), value: '≥0.3' },
+    ],
+    features: [],
+    accessories: [
+      t('فلتر الهواء', 'Air Filter'),
+      t('فلتر الزيت', 'Oil Filter'),
+      t('فاصل الزيت', 'Oil Separator'),
+      t('زيت الكمبروسر', 'Compressor Oil'),
+      t('سير عزم المحرك', 'Drive Belt'),
+      t('شاشة التحكم', 'Control Panel'),
+    ],
+    whyChooseUs: t(
+      'تقنية ROLLING RPROFILE الجديدة لكفاءة عالية جداً وتقليل الضوضاء — طرف ضاغط Rotorcomp "صنع في ألمانيا" — نظام تحكم ذكي بشاشة لمس — مكونات كهربائية Schneider — محرك موفر للطاقة IE3 بكفاءة أعلى 15% — ناقل حركة OPTI بعمر افتراضي 25,000 ساعة — ضمان 12 شهراً على الجهاز وطرف الضاغط.',
+      'New ROLLING RPROFILE technology for maximum efficiency and low noise — German Rotorcomp air end — Smart touch-screen controller — Schneider electrical components — IE3 energy-saving motor (+15% efficiency) — OPTI belt drive with 25,000-hour lifespan — 12-month warranty on unit and air end.'
+    ),
+    afterSales: t(
+      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة تشمل إعادة ضبط النظام وفحص جميع المكونات.',
+      'We provide original spare parts and comprehensive periodic maintenance including system recalibration and full component inspection.'
+    ),
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-15B',
+      "Hello, I'd like to inquire about the LGFD-15B Screw Air Compressor"
+    ),
+  },
+
+  {
+    id: 'compressor-lgfd-22b',
+    category: 'compressor',
+    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
+    name: t('كمبروسر هواء سكرو LGFD-22B', 'LGFD-22B Screw Air Compressor'),
+    model: 'LGFD-22B',
+    description: t(
+      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بطرف ضاغط Rotorcomp الألماني، قوة 22 كيلوواط مناسب للورش EAE-8014ة والكبيرة.',
+      'EVO oil-injected screw air compressor with German Rotorcomp air end, 22 kW — ideal for medium and large workshops.'
+    ),
+    image: compShared1,
+    images: [compShared1, compShared2,  comp22, comp22_2, comp22_3, ...compressorSharedImages],
+    specs: [
+      { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '22' },
+      { label: t('الضغط', 'Pressure'), value: '10 bar' },
+      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
+      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
+      { label: t('سعة الهواء', 'Air Capacity'), value: '3.2 m³/min' },
+      { label: t('وزن الكمبروسر', 'N/W Comp'), value: '500 KG' },
+      { label: t('الأبعاد (مم)', 'Dimensions (mm)'), value: '1100 × 850 × 1296' },
+      { label: t('رقم الموديل', 'Model'), value: 'YX3-160L-2' },
+      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
+      { label: t('قوة مروحة التبريد (واط)', 'Cooling Fan Power (W)'), value: '750' },
+      { label: t('تدفق هواء التبريد (م³/س)', 'Cooling Air Flow (m³/h)'), value: '9500' },
+      { label: t('وزن المحرك', 'N/W Motor'), value: '138 KG' },
+      { label: t('سرعة المحرك (RPM)', 'Speed / Motor (RPM)'), value: '3530' },
+      { label: t('حجم الخزان (م³)', 'Adapter Volume (m³)'), value: '≥0.5' },
+    ],
+    features: [],
+    accessories: [
+      t('فلتر الهواء', 'Air Filter'),
+      t('فلتر الزيت', 'Oil Filter'),
+      t('فاصل الزيت', 'Oil Separator'),
+      t('زيت الكمبروسر', 'Compressor Oil'),
+      t('سير عزم المحرك', 'Drive Belt'),
+      t('شاشة التحكم', 'Control Panel'),
+    ],
+    whyChooseUs: t(
+      'تقنية ROLLING RPROFILE الجديدة لكفاءة عالية جداً وتقليل الضوضاء — طرف ضاغط Rotorcomp "صنع في ألمانيا" — نظام تحكم ذكي بشاشة لمس — مكونات كهربائية Schneider — محرك موفر للطاقة IE3 بكفاءة أعلى 15% — ناقل حركة OPTI بعمر افتراضي 25,000 ساعة — ضمان 12 شهراً على الجهاز وطرف الضاغط.',
+      'New ROLLING RPROFILE technology for maximum efficiency and low noise — German Rotorcomp air end — Smart touch-screen controller — Schneider electrical components — IE3 energy-saving motor (+15% efficiency) — OPTI belt drive with 25,000-hour lifespan — 12-month warranty on unit and air end.'
+    ),
+    afterSales: t(
+      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة تشمل إعادة ضبط النظام وفحص جميع المكونات.',
+      'We provide original spare parts and comprehensive periodic maintenance including system recalibration and full component inspection.'
+    ),
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-22B',
+      "Hello, I'd like to inquire about the LGFD-22B Screw Air Compressor"
+    ),
+  },
+
+  {
+    id: 'compressor-lgfd-30b',
+    category: 'compressor',
+    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
+    name: t('كمبروسر هواء سكرو LGFD-30B', 'LGFD-30B Screw Air Compressor'),
+    model: 'LGFD-30B',
+    description: t(
+      'ضاغط هواء حلزوني محقون بالزيت فئة EVO بقوة 30 كيلوواط وسعة هواء 4.32 م³/د، مثالي للمنشآت الصناعية EAE-8014ة.',
+      'EVO oil-injected screw air compressor, 30 kW with 4.32 m³/min air capacity — ideal for mid-size industrial facilities.'
+    ),
+    image: compShared1,
+    images: [compShared1, compShared2,  ...compressorSharedImages],
+    specs: [
+      { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '30' },
+      { label: t('الضغط', 'Pressure'), value: '10 bar' },
+      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
+      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
+      { label: t('سعة الهواء', 'Air Capacity'), value: '4.32 m³/min' },
+      { label: t('وزن الكمبروسر', 'N/W Comp'), value: '450 KG' },
+      { label: t('الأبعاد (مم)', 'Dimensions (mm)'), value: '1200 × 900 × 1300' },
+      { label: t('رقم الموديل', 'Model'), value: 'YX3-160L-2' },
+      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
+      { label: t('قوة مروحة التبريد (واط)', 'Cooling Fan Power (W)'), value: '750' },
+      { label: t('تدفق هواء التبريد (م³/س)', 'Cooling Air Flow (m³/h)'), value: '950' },
+      { label: t('وزن المحرك', 'N/W Motor'), value: '240 KG' },
+      { label: t('سرعة المحرك (RPM)', 'Speed / Motor (RPM)'), value: '3535' },
+    ],
+    features: [],
+    accessories: [
+      t('فلتر الهواء', 'Air Filter'),
+      t('فلتر الزيت', 'Oil Filter'),
+      t('فاصل الزيت', 'Oil Separator'),
+      t('زيت الكمبروسر', 'Compressor Oil'),
+      t('سير عزم المحرك', 'Drive Belt'),
+      t('شاشة التحكم', 'Control Panel'),
+    ],
+    whyChooseUs: t(
+      'تقنية ROLLING RPROFILE الجديدة لكفاءة عالية جداً وتقليل الضوضاء — طرف ضاغط Rotorcomp "صنع في ألمانيا" — نظام تحكم ذكي بشاشة لمس — مكونات كهربائية Schneider — محرك موفر للطاقة IE3 بكفاءة أعلى 15% — ناقل حركة OPTI بعمر افتراضي 25,000 ساعة — ضمان 12 شهراً على الجهاز وطرف الضاغط.',
+      'New ROLLING RPROFILE technology for maximum efficiency and low noise — German Rotorcomp air end — Smart touch-screen controller — Schneider electrical components — IE3 energy-saving motor (+15% efficiency) — OPTI belt drive with 25,000-hour lifespan — 12-month warranty on unit and air end.'
+    ),
+    afterSales: t(
+      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة تشمل إعادة ضبط النظام وفحص جميع المكونات.',
+      'We provide original spare parts and comprehensive periodic maintenance including system recalibration and full component inspection.'
+    ),
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-30B',
+      "Hello, I'd like to inquire about the LGFD-30B Screw Air Compressor"
+    ),
+  },
+
+  {
+    id: 'compressor-lgfd-37b',
+    category: 'compressor',
+    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
+    name: t('كمبروسر هواء سكرو LGFD-37B', 'LGFD-37B Screw Air Compressor'),
+    model: 'LGFD-37B',
+    description: t(
+      'ضاغط هواء حلزوني محقون بالزيت فئة EVO الأقوى في السلسلة بقوة 37 كيلوواط وسعة هواء 5.8 م³/د، للمنشآت الصناعية الكبيرة.',
+      'The most powerful EVO oil-injected screw compressor in the series — 37 kW, 5.8 m³/min — built for large industrial facilities.'
+    ),
+    image: compShared1,
+    images: [compShared1, compShared2,  comp37, ...compressorSharedImages],
+    specs: [
+      { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '37' },
+      { label: t('الضغط', 'Pressure'), value: '10 bar' },
+      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
+      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
+      { label: t('سعة الهواء', 'Air Capacity'), value: '5.8 m³/min' },
+      { label: t('وزن الكمبروسر', 'N/W Comp'), value: '700 KG' },
+      { label: t('الأبعاد (مم)', 'Dimensions (mm)'), value: '1300 × 1000 × 1296' },
+      { label: t('رقم الموديل', 'Model'), value: 'YX3-160L-2' },
+      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
+      { label: t('قوة مروحة التبريد (واط)', 'Cooling Fan Power (W)'), value: '1100' },
+      { label: t('تدفق هواء التبريد (م³/س)', 'Cooling Air Flow (m³/h)'), value: '16000' },
+      { label: t('وزن المحرك', 'N/W Motor'), value: '251 KG' },
+      { label: t('سرعة المحرك (RPM)', 'Speed / Motor (RPM)'), value: '3540' },
+      { label: t('حجم الخزان (م³)', 'Adapter Volume (m³)'), value: '≥0.6' },
+    ],
+    features: [],
+    accessories: [
+      t('فلتر الهواء', 'Air Filter'),
+      t('فلتر الزيت', 'Oil Filter'),
+      t('فاصل الزيت', 'Oil Separator'),
+      t('زيت الكمبروسر', 'Compressor Oil'),
+      t('سير عزم المحرك', 'Drive Belt'),
+      t('شاشة التحكم', 'Control Panel'),
+    ],
+    whyChooseUs: t(
+      'تقنية ROLLING RPROFILE الجديدة لكفاءة عالية جداً وتقليل الضوضاء — طرف ضاغط Rotorcomp "صنع في ألمانيا" — نظام تحكم ذكي بشاشة لمس — مكونات كهربائية Schneider — محرك موفر للطاقة IE3 بكفاءة أعلى 15% — ناقل حركة OPTI بعمر افتراضي 25,000 ساعة — ضمان 12 شهراً على الجهاز وطرف الضاغط.',
+      'New ROLLING RPROFILE technology for maximum efficiency and low noise — German Rotorcomp air end — Smart touch-screen controller — Schneider electrical components — IE3 energy-saving motor (+15% efficiency) — OPTI belt drive with 25,000-hour lifespan — 12-month warranty on unit and air end.'
+    ),
+    afterSales: t(
+      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة تشمل إعادة ضبط النظام وفحص جميع المكونات.',
+      'We provide original spare parts and comprehensive periodic maintenance including system recalibration and full component inspection.'
+    ),
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-37B',
+      "Hello, I'd like to inquire about the LGFD-37B Screw Air Compressor"
+    ),
+  },
+
+  {
+    id: 'compressor-integrated',
+    category: 'compressor',
+    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
+    name: t('الكمبروسر المتكامل', 'Integrated Air Compressor'),
+    model: 'LGFD-15B Integrated',
+    description: t(
+      'كمبروسر هواء متكامل بقوة 15 كيلوواط (20 حصان) مزود بمجفف هواء مدمج وخزان سعة 500 لتر — حل شامل ومتكامل في وحدة واحدة مثالي للورش الاحترافية.',
+      'Integrated air compressor 15 kW (20 HP) with built-in air dryer and 500-liter tank — a complete all-in-one solution ideal for professional workshops.'
+    ),
+    image: integratedMain,
+    images: [ compShared2, comp15Extra1, comp15Extra2, ...compressorSharedImages],
+    specs: [
+      { label: t('قوة المحرك', 'Motor Power'), value: '15 kW / 20 HP' },
+      { label: t('الضغط', 'Pressure'), value: '10 bar' },
+      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
+      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
+      { label: t('سعة الخزان', 'Tank Capacity'), value: '500 لتر / 500 L' },
+      { label: t('المجفف', 'Air Dryer'), value: 'مدمج / Built-in' },
+      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
+    ],
+    features: [
+      t('قوة 15 كيلوواط (20 حصان)', '15 kW (20 HP) power'),
+      t('مجفف هواء مدمج لضمان هواء جاف ونظيف', 'Built-in air dryer for clean dry air'),
+      t('خزان سعة 500 لتر لضغط هواء مستمر وثابت', '500-liter tank for continuous stable pressure'),
+      t('طرف ضاغط Rotorcomp الألماني لكفاءة عالية', 'German Rotorcomp air end for maximum efficiency'),
+      t('تصميم متكامل في وحدة واحدة سهل التركيب', 'All-in-one integrated design, easy to install'),
+      t('ضوضاء منخفضة مع أداء عالٍ', 'Low noise with high performance'),
+      t('ضمان 12 شهراً على الجهاز كاملاً', '12-month full warranty'),
+    ],
+    whyChooseUs: t(
+      'يجمع الكمبروسر المتكامل بين الضاغط الحلزوني والمجفف والخزان في وحدة واحدة، مما يوفر عليك تكلفة وجهد التركيب المنفصل ويضمن هواء نظيف وجاف على مدار الساعة.',
+      'The integrated compressor combines the screw compressor, dryer, and tank in one unit — saving installation cost and effort while guaranteeing clean dry air around the clock.'
+    ),
+    afterSales: t(
+      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة.',
+      'We provide original spare parts and comprehensive periodic maintenance.'
+    ),
+    accessories: [
+      t('فلتر الهواء', 'Air Filter'),
+      t('فلتر الزيت', 'Oil Filter'),
+      t('فاصل الزيت', 'Oil Separator'),
+      t('زيت الكمبروسر', 'Compressor Oil'),
+      t('شاشة التحكم', 'Control Panel'),
+    ],
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن الكمبروسر المتكامل 15 كيلوواط',
+      "Hello, I'd like to inquire about the Integrated Air Compressor 15 kW"
+    ),
+  },
 ];
 
 export const categories = [

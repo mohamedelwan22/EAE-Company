@@ -647,7 +647,7 @@ export const products: Product[] = [
       'ضاغط هواء حلزوني محقون بالزيت فئة EVO بطرف ضاغط Rotorcomp الألماني، يوفر كفاءة عالية وضوضاء منخفضة مع ضمان 12 شهراً.',
       'EVO oil-injected screw air compressor with German Rotorcomp air end. High efficiency, low noise, 12-month warranty.'
     ),
-    image: comp15,
+    image: compShared1,
     images: [compShared1, compShared2, comp15Extra1, comp15Extra2, comp15, comp15_2, comp15_3, comp15_4, comp15_5, comp15_6, comp15_7, comp15_8, comp15_9, comp15_10, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '15' },
@@ -698,8 +698,8 @@ export const products: Product[] = [
       'ضاغط هواء حلزوني محقون بالزيت فئة EVO بطرف ضاغط Rotorcomp الألماني، قوة 22 كيلوواط مناسب للورش EAE-8014ة والكبيرة.',
       'EVO oil-injected screw air compressor with German Rotorcomp air end, 22 kW — ideal for medium and large workshops.'
     ),
-    image: comp22,
-    images: [compShared1, compShared2, comp22, comp22_2, comp22_3, ...compressorSharedImages],
+    image: compShared1,
+    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, comp22, comp22_2, comp22_3, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '22' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -749,8 +749,8 @@ export const products: Product[] = [
       'ضاغط هواء حلزوني محقون بالزيت فئة EVO بقوة 30 كيلوواط وسعة هواء 4.32 م³/د، مثالي للمنشآت الصناعية EAE-8014ة.',
       'EVO oil-injected screw air compressor, 30 kW with 4.32 m³/min air capacity — ideal for mid-size industrial facilities.'
     ),
-    image: comp,
-    images: [compShared1, compShared2, ...compressorSharedImages],
+    image: compShared1,
+    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '30' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -799,8 +799,8 @@ export const products: Product[] = [
       'ضاغط هواء حلزوني محقون بالزيت فئة EVO الأقوى في السلسلة بقوة 37 كيلوواط وسعة هواء 5.8 م³/د، للمنشآت الصناعية الكبيرة.',
       'The most powerful EVO oil-injected screw compressor in the series — 37 kW, 5.8 m³/min — built for large industrial facilities.'
     ),
-    image: comp37,
-    images: [compShared1, compShared2, comp37, ...compressorSharedImages],
+    image: compShared1,
+    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, comp37, ...compressorSharedImages],
     specs: [
       { label: t('قوة المحرك (كيلوواط)', 'Motor Power (kW)'), value: '37' },
       { label: t('الضغط', 'Pressure'), value: '10 bar' },
@@ -837,6 +837,57 @@ export const products: Product[] = [
     whatsappText: t(
       'مرحباً، أود الاستفسار عن كمبروسر هواء سكرو LGFD-37B',
       "Hello, I'd like to inquire about the LGFD-37B Screw Air Compressor"
+    ),
+  },
+
+  {
+    id: 'compressor-integrated',
+    category: 'compressor',
+    categoryLabel: t('ضاغطات الهواء', 'Air Compressors'),
+    name: t('الكمبروسر المتكامل', 'Integrated Air Compressor'),
+    model: 'LGFD-15B Integrated',
+    description: t(
+      'كمبروسر هواء متكامل بقوة 15 كيلوواط (20 حصان) مزود بمجفف هواء مدمج وخزان سعة 500 لتر — حل شامل ومتكامل في وحدة واحدة مثالي للورش الاحترافية.',
+      'Integrated air compressor 15 kW (20 HP) with built-in air dryer and 500-liter tank — a complete all-in-one solution ideal for professional workshops.'
+    ),
+    image: compShared1,
+    images: [compShared1, compShared2, comp15Extra1, comp15Extra2, ...compressorSharedImages],
+    specs: [
+      { label: t('قوة المحرك', 'Motor Power'), value: '15 kW / 20 HP' },
+      { label: t('الضغط', 'Pressure'), value: '10 bar' },
+      { label: t('الجهد الكهربائي', 'Voltage'), value: '380V / 3P / 60Hz' },
+      { label: t('طرف الضاغط', 'Air End'), value: 'EVO Rotorcomp – Made in Germany' },
+      { label: t('سعة الخزان', 'Tank Capacity'), value: '500 لتر / 500 L' },
+      { label: t('المجفف', 'Air Dryer'), value: 'مدمج / Built-in' },
+      { label: t('نظام التبريد', 'Cooling Mode'), value: 'Air Cooling' },
+    ],
+    features: [
+      t('قوة 15 كيلوواط (20 حصان)', '15 kW (20 HP) power'),
+      t('مجفف هواء مدمج لضمان هواء جاف ونظيف', 'Built-in air dryer for clean dry air'),
+      t('خزان سعة 500 لتر لضغط هواء مستمر وثابت', '500-liter tank for continuous stable pressure'),
+      t('طرف ضاغط Rotorcomp الألماني لكفاءة عالية', 'German Rotorcomp air end for maximum efficiency'),
+      t('تصميم متكامل في وحدة واحدة سهل التركيب', 'All-in-one integrated design, easy to install'),
+      t('ضوضاء منخفضة مع أداء عالٍ', 'Low noise with high performance'),
+      t('ضمان 12 شهراً على الجهاز كاملاً', '12-month full warranty'),
+    ],
+    whyChooseUs: t(
+      'يجمع الكمبروسر المتكامل بين الضاغط الحلزوني والمجفف والخزان في وحدة واحدة، مما يوفر عليك تكلفة وجهد التركيب المنفصل ويضمن هواء نظيف وجاف على مدار الساعة.',
+      'The integrated compressor combines the screw compressor, dryer, and tank in one unit — saving installation cost and effort while guaranteeing clean dry air around the clock.'
+    ),
+    afterSales: t(
+      'نوفر قطع الغيار الأصلية وصيانة دورية متكاملة.',
+      'We provide original spare parts and comprehensive periodic maintenance.'
+    ),
+    accessories: [
+      t('فلتر الهواء', 'Air Filter'),
+      t('فلتر الزيت', 'Oil Filter'),
+      t('فاصل الزيت', 'Oil Separator'),
+      t('زيت الكمبروسر', 'Compressor Oil'),
+      t('شاشة التحكم', 'Control Panel'),
+    ],
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن الكمبروسر المتكامل 15 كيلوواط',
+      "Hello, I'd like to inquire about the Integrated Air Compressor 15 kW"
     ),
   },
 

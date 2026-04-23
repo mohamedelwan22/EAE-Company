@@ -126,6 +126,7 @@ export interface Product {
     en: { label: string; value: string }[];
   };
   afterSales?: { ar: string; en: string };
+  flipImage?: boolean;
 }
 
 const t = (ar: string, en: string) => ({ ar, en });
@@ -184,6 +185,7 @@ export const products: Product[] = [
       'مرحباً، أود الاستفسار عن كابينة الدهان  EAE-8000 (JZJ-8000AU)',
       "Hello, I'd like to inquire about the  Spray Booth EAE-8000 (JZJ-8000AU)"
     ),
+    flipImage: true,
   },
 
   {
@@ -239,37 +241,6 @@ export const products: Product[] = [
   },
 
   {
-    id: 'filters-spray-booth',
-    category: 'spray-booth',
-    categoryLabel: t('أفران الدهان', 'Spray Booths'),
-    name: t('فلتر فرن الدهان', 'Filters Spray Booth'),
-    model: 'EAE-FILTER',
-    description: t(
-      'تُعدّ فلاتر أفران الدهان مواد أساسية تُستخدم لالتقاط ومعالجة رذاذ الطلاء الناتج عن عملية الرش، وتتمثل وظيفتها الرئيسية في إزالة جزيئات رذاذ الطلاء من الهواء عن طريق الاعتراض الفيزيائي، وذلك لحماية البيئة والمعدات. تتكون فلاتر كابينة رش السيارات عادةً من ألياف زجاجية أحادية الشعيرة متصلة عالية المتانة، والتي يمكنها تخزين غبار رذاذ الطلاء بكفاءة. مادة الترشيح مصنوعة من القطن الأخضر والأبيض، والجانب الأخضر هو الجانب المواجه للهواء، ويتميز بمرونته وانخفاض فقدان الضغط.',
-      'Spray booth filters are essential materials used to capture and treat paint spray mist generated during the spraying process. Their primary function is to remove paint spray particles from the air through physical interception, protecting both the environment and equipment. Spray booth filters are typically made of high-durability single-filament glass fibers capable of efficiently storing paint spray dust. The filter media is made of green and white cotton — the green side faces the airflow, offering flexibility and low pressure drop.'
-    ),
-    image: filter1,
-    images: [filter1, filter2],
-    specs: [
-      { label: t('المادة', 'Material'), value: 'Glass Fiber / ألياف زجاجية' },
-      { label: t('مادة الترشيح', 'Filter Media'), value: 'Green & White Cotton / قطن أخضر وأبيض' },
-      { label: t('الوظيفة', 'Function'), value: 'Paint Mist Filtration / ترشيح رذاذ الطلاء' },
-    ],
-    features: [
-      t('ألياف زجاجية أحادية الشعيرة عالية المتانة', 'High-durability single-filament glass fibers'),
-      t('تخزين فعال لغبار رذاذ الطلاء', 'Efficient paint spray dust storage'),
-      t('مادة ترشيح من القطن الأخضر والأبيض', 'Green and white cotton filter media'),
-      t('الجانب الأخضر مواجه للهواء بمرونة عالية', 'Green side faces airflow with high flexibility'),
-      t('انخفاض فقدان الضغط أثناء التشغيل', 'Low pressure drop during operation'),
-      t('حماية البيئة والمعدات من جزيئات الطلاء', 'Protects environment and equipment from paint particles'),
-    ],
-    whatsappText: t(
-      'مرحباً، أود الاستفسار عن فلاتر أفران الدهان EAE-FILTER',
-      "Hello, I'd like to inquire about Spray Booth Filters EAE-FILTER"
-    ),
-  },
-
-  {
     id: 'spray-booth-economic',
     category: 'spray-booth',
     categoryLabel: t('أفران الدهان  ', 'Spray Booths '),
@@ -302,7 +273,39 @@ export const products: Product[] = [
       'مرحباً، أود الاستفسار عن فرن الرش EAE 8015',
       "Hello, I'd like to inquire about Economic Spray Booth EAE-8015"
     ),
-  },
+  }
+  ,
+    {
+    id: 'filters-spray-booth',
+    category: 'spray-booth',
+    categoryLabel: t('أفران الدهان', 'Spray Booths'),
+    name: t('فلتر فرن الدهان', 'Filters Spray Booth'),
+    model: 'EAE-FILTER',
+    description: t(
+      'تُعدّ فلاتر أفران الدهان مواد أساسية تُستخدم لالتقاط ومعالجة رذاذ الطلاء الناتج عن عملية الرش، وتتمثل وظيفتها الرئيسية في إزالة جزيئات رذاذ الطلاء من الهواء عن طريق الاعتراض الفيزيائي، وذلك لحماية البيئة والمعدات. تتكون فلاتر كابينة رش السيارات عادةً من ألياف زجاجية أحادية الشعيرة متصلة عالية المتانة، والتي يمكنها تخزين غبار رذاذ الطلاء بكفاءة. مادة الترشيح مصنوعة من القطن الأخضر والأبيض، والجانب الأخضر هو الجانب المواجه للهواء، ويتميز بمرونته وانخفاض فقدان الضغط.',
+      'Spray booth filters are essential materials used to capture and treat paint spray mist generated during the spraying process. Their primary function is to remove paint spray particles from the air through physical interception, protecting both the environment and equipment. Spray booth filters are typically made of high-durability single-filament glass fibers capable of efficiently storing paint spray dust. The filter media is made of green and white cotton — the green side faces the airflow, offering flexibility and low pressure drop.'
+    ),
+    image: filter1,
+    images: [filter1, filter2],
+    specs: [
+      { label: t('المادة', 'Material'), value: 'Glass Fiber / ألياف زجاجية' },
+      { label: t('مادة الترشيح', 'Filter Media'), value: 'Green & White Cotton / قطن أخضر وأبيض' },
+      { label: t('الوظيفة', 'Function'), value: 'Paint Mist Filtration / ترشيح رذاذ الطلاء' },
+    ],
+    features: [
+      t('ألياف زجاجية أحادية الشعيرة عالية المتانة', 'High-durability single-filament glass fibers'),
+      t('تخزين فعال لغبار رذاذ الطلاء', 'Efficient paint spray dust storage'),
+      t('مادة ترشيح من القطن الأخضر والأبيض', 'Green and white cotton filter media'),
+      t('الجانب الأخضر مواجه للهواء بمرونة عالية', 'Green side faces airflow with high flexibility'),
+      t('انخفاض فقدان الضغط أثناء التشغيل', 'Low pressure drop during operation'),
+      t('حماية البيئة والمعدات من جزيئات الطلاء', 'Protects environment and equipment from paint particles'),
+    ],
+    whatsappText: t(
+      'مرحباً، أود الاستفسار عن فلاتر أفران الدهان EAE-FILTER',
+      "Hello, I'd like to inquire about Spray Booth Filters EAE-FILTER"
+    ),
+  } ,
+
 
   {
     id: 'car-lift-2post-closed',
@@ -348,6 +351,7 @@ export const products: Product[] = [
       'مرحباً، أود الاستفسار عن رافعة 2 عمود مقفولة LD-240T',
       "Hello, I'd like to inquire about the 2 Post Closed Car Lift LD-240T"
     ),
+    flipImage: true,
   },
 
   {
@@ -389,6 +393,7 @@ export const products: Product[] = [
       'مرحباً، أود الاستفسار عن رافعة 2 عمود مفتوحة LD-240TS',
       "Hello, I'd like to inquire about the 2 Post Open Car Lift LD-240TS"
     ),
+    flipImage: true,
   },
 
   {
@@ -439,6 +444,7 @@ export const products: Product[] = [
       'مرحباً، أود الاستفسار عن رافعة 4 عمود LD-440',
       "Hello, I'd like to inquire about the 4-post car lift LD-440"
     ),
+    flipImage: true,
   },
 
   {
@@ -491,6 +497,7 @@ export const products: Product[] = [
       'مرحباً، أود الاستفسار عن الرافعة المقصية الأرضية LC-400',
       "Hello, I'd like to inquire about the Ground Scissor Lift LC-400"
     ),
+    flipImage: true,
   },
 
   {
@@ -535,6 +542,7 @@ export const products: Product[] = [
       'مرحباً، أود الاستفسار عن رافعة المقص المزدوج بميزان BLC-350',
       "Hello, I'd like to inquire about the Double Scissor Alignment Lift BLC-350"
     ),
+    flipImage: true,
   },
 
   {
@@ -584,6 +592,7 @@ export const products: Product[] = [
       'السلام عليكم، أود الاستفسار عن رافعة السيارات الأرضية موديل LD-580',
       'Hello, I would like to inquire about the Floor Lift LD-580'
     ),
+    // flipImage: true,
   },
 
   {
@@ -683,6 +692,7 @@ export const products: Product[] = [
       'السلام عليكم، أود الاستفسار عن ماكينة إعادة شحن غاز المكيف موديل HO-S600',
       'Hello, I would like to inquire about the AC Refrigerant Machine HO-S600'
     ),
+    flipImage: true,
   },
 
   {
@@ -819,6 +829,7 @@ export const products: Product[] = [
       'السلام عليكم، أود الاستفسار عن شمعات التجفيف بالأشعة تحت الحمراء – 2 شمعة',
       'Hello, I would like to inquire about the Infrared Baking Lamp – 2 Lamps'
     ),
+    flipImage: true,
   },
 
   {
@@ -882,6 +893,7 @@ export const products: Product[] = [
       'السلام عليكم، أود الاستفسار عن شمعات التجفيف بالأشعة تحت الحمراء – 6 شمعات',
       'Hello, I would like to inquire about the Infrared Baking Lamp – 6 Lamps'
     ),
+    flipImage: true,
   },
 
   {

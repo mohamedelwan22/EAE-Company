@@ -63,7 +63,13 @@ const Products = () => {
                     <img
                       src={product.image}
                       alt={t(product.name.ar, product.name.en)}
-                      className="max-h-full max-w-full h-auto w-auto object-contain scale-x-[-1] group-hover:scale-x-[-1.05] group-hover:scale-y-105 transition-transform duration-500"
+                      className="transition-transform duration-500"
+                      style={{
+                        transform: product.flipImage ? 'scaleX(-1)' : 'none',
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'contain',
+                      }}
                       loading="lazy"
                     />
                     {product.badge && (
